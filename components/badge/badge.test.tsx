@@ -1,25 +1,39 @@
-import { render } from '@/lib/test-utils'
+import { render, screen } from '@/lib/test-utils'
 
-import { Badge, BadgeType } from './badge'
+import { Badge } from './badge'
 
 describe('<Badge />', () => {
-	const today = new Date().toString()
+
+	const today = "2024-01-26T15:00:00.000Z"
+	const yesterday = "2024-01-25T15:00:00.000Z"
+	const lastWeek = "2024-01-18T15:00:00.000Z"
+
 	test('renders the new badge', () => {
-		const { getByText } = render(<Badge createdAt={today} updatedAt={today} />)
+		const { getByText } = render(<Badge createdAt={today} updatedAt={yesterday} />)
 		expect(getByText('new')).toBeInTheDocument()
 	})
-	test('renders the updated badge', () => {
-		const yesterday = new Date()
-		yesterday.setDate(yesterday.getDate() - 1)
 
+	test('renders the updated badge', () => {
 		const { getByText } = render(
 			<Badge
-				createdAt={yesterday.toString()}
-				updatedAt={yesterday.toString()}
+				createdAt={yesterday}
+				updatedAt={yesterday}
 			/>
 		)
 		expect(getByText('updated')).toBeInTheDocument()
 	})
+
+	test('renders the updated badge', () => {
+		render(
+			<Badge
+				createdAt={yesterday}
+				updatedAt={lastWeek}
+			/>
+		)
+
+		expect(screen.queryByTestId('badge')).not.toBeInTheDocument();
+	})
+
 	test('renders nothing', () => {
 		const { queryByText } = render(<Badge createdAt={''} updatedAt={''} />)
 		expect(queryByText('new')).not.toBeInTheDocument()
