@@ -13,7 +13,7 @@ export const SidebarMenuItem = ({ items }: SidebarMenuItemProps) => {
 			<li key={index}>
 				<LinkWrapper href={item.url} className='flex justify-between flex-wrap'>
 					{item.name}{' '}
-					<Badge createdAt={item.createdAt} updatedAt={item.createdAt} />
+					<Badge createdAt={item.createdAt} updatedAt={item.updatedAt} />
 				</LinkWrapper>
 			</li>
 		)
