@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { Contributor } from '@/lib/mdx/mdx-utils'
+import { WebLink } from '../web-link/web-link'
 
 type ContributorsProp = {
 	contributors: Contributor[] | []
@@ -17,14 +18,13 @@ export const Contributors = ({ contributors }: ContributorsProp) => {
 			<p className='mb-4'>
 				Gracias a todxs los que aportaron en este documento! ✨
 			</p>
-			<ul>
+			<ul className='flex flex-wrap gap-2'>
 				{contributors.map(({ github_username }) => {
 					return (
 						<li key={`contributor-${github_username}`}>
-							<a
+							<WebLink
 								href={`https://github.com/${github_username}`}
-								target='_blank'
-								rel='noreferrer'>
+								>
 								<Image
 									loading='lazy'
 									src={`https://github.com/${github_username}.png?size=80`}
@@ -33,7 +33,7 @@ export const Contributors = ({ contributors }: ContributorsProp) => {
 									alt={`Usuarix contribuidxr - ${github_username}`}
 									className='rounded-full'
 								/>
-							</a>
+							</WebLink>
 						</li>
 					)
 				})}
