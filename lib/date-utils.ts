@@ -8,14 +8,14 @@ export const isToday = (date: Date) => {
 	)
 }
 
-export const isThisWeekButNotToday = (date: Date) => {
+export const isUpdated = (updatedAt: Date) => {
+	if(isToday(updatedAt)) return true
+
 	const today = new Date()
 
 	const isSameWeek =
-		date.getDate() - today.getDate() >= -today.getDay() &&
-		date.getDate() - today.getDate() <= 6 - today.getDay()
+		updatedAt.getDate() - today.getDate() >= -today.getDay() &&
+		updatedAt.getDate() - today.getDate() <= 6 - today.getDay()
 
-	const isNotToday = !isToday(date)
-
-	return isSameWeek && isNotToday
+	return isSameWeek
 }
