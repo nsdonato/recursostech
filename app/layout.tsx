@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react';
 
 import Navbar from '@/components/navbar/navbar'
 import { SidebarMenu } from '@/components/sidebar-menu/sidebar-menu'
@@ -28,6 +29,7 @@ export default function RootLayout({
 					<SidebarMenu className='' />
 					<main className='p-4 lg:col-span-5'>{children}</main>
 				</div>
+				<Analytics />
 			</body>
 		</html>
 	)
