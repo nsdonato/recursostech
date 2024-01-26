@@ -1,0 +1,8 @@
+coverage
+.agregar-nuevo-recurso.md
+CONTRIBUTING.md
+.github
+dist
+node_modules
+.next
+build

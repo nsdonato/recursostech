@@ -1,0 +1,11 @@
+{
+	"recommendations": [
+		"streetsidesoftware.code-spell-checker",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"formulahendry.auto-rename-tag",
+		"steoates.autoimport",
+		"vivaxy.vscode-conventional-commits",
+		"bradlc.vscode-tailwindcss"
+	]
+}

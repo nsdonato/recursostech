@@ -1,0 +1,78 @@
+---
+contributors:
+  - github_username: 'nsdonato'
+---
+
+import { Figure } from '@/components/figure/figure'
+import { Header } from '@/components/header/header'
+import { WebLink } from '@/components/web-link/web-link'
+
+<Header
+	title='Inicio'
+	description='En Internet siempre veo las mismas preguntas:'
+/>
+
+- ¿Tenes algún recurso de iconos?
+- ¿Donde puedo deployar mi web?
+- ¿Comó configuro [inserte aquí extensión, herramienta, etc]?
+
+<br />
+📌 Crees que debería haber un recurso y no esta? Hace un PR y agregalo! <br />
+😨 Si no te animas, hace el pedido mediante este <span className='underline'>
+	[Issue](https://github.com/nsdonato/recursostech/issues/new/choose)
+</span> opción "Agregar nuevo recurso" y lo agregamos! <br />
+
+🤔 ¿Te gustaría que alguna herramienta tenga video, para saber como instalarla/configurarla? <br />
+🚀 Hace el pedido mediante un <span className="underline">
+[Issue](https://github.com/nsdonato/recursostech/issues/new/choose) opción "Agregar nuevo video para recurso" </span> e intentamos sumarlo! <br />
+
+Espero te guste la idea y si crees que se puede agregar algo más, no dudes en comentarlo! ☺️
+
+Noe <span className="underline">[vamoacodear](https://twitter.com/vamoacodear)</span>
+
+<div className='flex gap-2 mt-4 items-center'>
+	<WebLink href='https://discord.gg/JYnKadCSkV'>
+		<Figure
+			cover={{
+				width: 40,
+				height: 40,
+				src: '/socials/discord.svg',
+			}}
+			placeholder="Discord"
+		/>
+	</WebLink>
+
+    <WebLink href='https://twitter.com/vamoacodear'>
+    	<Figure
+    		cover={{
+    			width: 30,
+    			height: 30,
+    			src: '/socials/twitter.svg',
+    		}}
+    		placeholder="Twitter"
+    	/>
+    </WebLink>
+
+    <WebLink href='https://tiktok.com/@vamoacodear'>
+    	<Figure
+    		cover={{
+    			width: 33,
+    			height: 30,
+    			src: '/socials/tiktok.svg',
+    		}}
+    		placeholder="TikTok"
+    	/>
+    </WebLink>
+
+    <WebLink href='https://instagram.com/vamoacodear'>
+    	<Figure
+    		cover={{
+    			width: 30,
+    			height: 30,
+    			src: '/socials/instagram.svg',
+    		}}
+    		placeholder="Instagram"
+    	 />
+    </WebLink>
+
+</div>

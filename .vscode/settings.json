@@ -1,0 +1,21 @@
+{
+	"cSpell.language": "en",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"cSpell.words": [
+		"contribuir",
+		"js",
+		"json",
+		"yaml",
+		"yml",
+		"txt",
+		"cson",
+		"md",
+		"mdx"
+	],
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[mdx]": {
+		"editor.defaultFormatter": "unifiedjs.vscode-mdx"
+	}
+}

@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap');
+
+:root {
+	color-scheme: light;
+}
+:root[data-theme='synthwave'] {
+	color-scheme: synthwave;
+}
+
+:root[data-theme='synthwave'] img#svg {
+	filter: invert(1);
+}
+
+:root[data-theme='light'] img#svg.commitconf {
+	filter: invert(1);
+}
+
+:root[data-theme='light'] img#svg.youtube,
+:root[data-theme='light'] img#svg.vitest {
+	filter: none;
+}
+
+:root[data-theme='synthwave'] img#svg.youtube,
+:root[data-theme='synthwave'] img#svg.prettier,
+:root[data-theme='synthwave'] img#svg.nerdearla,
+:root[data-theme='synthwave'] img#svg.commitconf,
+:root[data-theme='synthwave'] img#svg.jest,
+:root[data-theme='synthwave'] img#svg.vitest,
+:root[data-theme='synthwave'] img#svg.playwright {
+	filter: none;
+}
+
+img.bilbostack {
+	border-radius: inherit;
+}
+
+* {
+	--font-popi: 'Poppins', sans-serif;
+	--font-weight-light: 100;
+	--font-weight-regular: 400;
+	--font-weight-bold: 700;
+	min-width: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+img,
+video,
+svg {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+body {
+	margin: 0;
+	min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+p {
+	text-wrap: pretty;
+}
+svg {
+	fill: 'red';
+}
+
+.icon-svg {
+	mask-size: 100%;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	width: 24px;
+	height: 24px;
+}
