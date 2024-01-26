@@ -3,7 +3,7 @@ import { twMerge } from 'tailwind-merge'
 
 import { BadgeType } from '@/components/badge/badge'
 
-import { isThisWeekButNotToday, isToday } from './date-utils'
+import { isUpdated, isToday } from './date-utils'
 
 export function cn(...inputs: ClassValue[]) {
 	return twMerge(clsx(inputs))
@@ -14,7 +14,7 @@ export const getBadgeType = (createdAt: Date, updatedAt: Date) => {
 		return BadgeType.new
 	}
 
-	if (isThisWeekButNotToday(updatedAt)) {
+	if (isUpdated(updatedAt)) {
 		return BadgeType.updated
 	}
 
