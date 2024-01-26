@@ -1,4 +1,4 @@
-import { isThisWeekButNotToday, isToday } from './date-utils'
+import { isUpdated, isToday } from './date-utils'
 
 describe('date-utils', () => {
 	describe('isToday', () => {
@@ -15,24 +15,24 @@ describe('date-utils', () => {
 		})
 	})
 
-	describe('isThisWeekButNotToday', () => {
+	describe('isUpdated', () => {
 		test('returns true if date is this week but not today', () => {
 			const today = new Date()
 			const tomorrow = new Date(today)
 			tomorrow.setDate(today.getDate() + 1)
-			expect(isThisWeekButNotToday(tomorrow)).toBe(true)
+			expect(isUpdated(tomorrow)).toBe(true)
 		})
 
 		test('returns false if date is not this week', () => {
 			const today = new Date()
 			const nextWeek = new Date(today)
 			nextWeek.setDate(today.getDate() + 7)
-			expect(isThisWeekButNotToday(nextWeek)).toBe(false)
+			expect(isUpdated(nextWeek)).toBe(false)
 		})
 
-		test('returns false if date is today', () => {
-			const today = new Date()
-			expect(isThisWeekButNotToday(today)).toBe(false)
+		test('returns true if updated date is today', () => {
+			const updatedToday = new Date()
+			expect(isUpdated(updatedToday)).toBe(true)
 		})
 	})
 })
