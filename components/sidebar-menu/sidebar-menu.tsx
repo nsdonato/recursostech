@@ -17,7 +17,7 @@ export const SidebarMenu = async ({ className }: SidebarMenuProps) => {
 
 	return (
 		<nav className={className}>
-			<ul className='menu rounded-box shadow-lg'>
+			<ul className='menu rounded-box shadow-lg grid gap-1'>
 				{menu.map(menuItem => (
 					<li key={menuItem.name}>
 						{menuItem.name === MAIN_MENU ? (
@@ -25,7 +25,7 @@ export const SidebarMenu = async ({ className }: SidebarMenuProps) => {
 						) : (
 							<details open>
 								<summary>{menuItem.name}</summary>
-								<ul>
+								<ul className='grid gap-1'>
 									{menuItem.items?.length === 1 ? (
 										<SidebarMenuItem items={[]} />
 									) : (
