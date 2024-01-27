@@ -1,38 +1,35 @@
-import { isUpdated, isToday } from './date-utils'
+import { isToday, isUpdated } from './date-utils'
 
 describe('date-utils', () => {
-	describe('isToday', () => {
-		test('returns true if date is today', () => {
-			const today = new Date()
-			expect(isToday(today)).toBe(true)
-		})
+  const today = new Date()
 
-		test('returns false if date is not today', () => {
-			const today = new Date()
-			const yesterday = new Date(today)
-			yesterday.setDate(today.getDate() - 1)
-			expect(isToday(yesterday)).toBe(false)
-		})
-	})
+  const yesterday = new Date(today)
+  yesterday.setDate(today.getDate() - 1)
 
-	describe('isUpdated', () => {
-		test('returns true if date is this week but not today', () => {
-			const today = new Date()
-			const tomorrow = new Date(today)
-			tomorrow.setDate(today.getDate() + 1)
-			expect(isUpdated(tomorrow)).toBe(true)
-		})
+  const lastWeek = new Date(today)
+  lastWeek.setDate(today.getDate() - 7)
 
-		test('returns false if date is not this week', () => {
-			const today = new Date()
-			const nextWeek = new Date(today)
-			nextWeek.setDate(today.getDate() + 7)
-			expect(isUpdated(nextWeek)).toBe(false)
-		})
+  describe('isToday', () => {
+    test('returns true if createdAt is today', () => {
+      expect(isToday(today)).toBe(true)
+    })
 
-		test('returns true if updated date is today', () => {
-			const updatedToday = new Date()
-			expect(isUpdated(updatedToday)).toBe(true)
-		})
-	})
+    test('returns false if createdAt is not today', () => {
+      expect(isToday(yesterday)).toBe(false)
+    })
+  })
+
+  describe('isUpdated', () => {
+    test('returns true if updatedDate is today', () => {
+      expect(isUpdated(today)).toBe(true)
+    })
+
+    test('returns true if updatedDate is this week', () => {
+      expect(isUpdated(yesterday)).toBe(true)
+    })
+
+    test('returns false if date is not this week', () => {
+      expect(isUpdated(lastWeek)).toBe(false)
+    })
+  })
 })
