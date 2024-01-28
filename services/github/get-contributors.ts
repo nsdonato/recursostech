@@ -6,7 +6,7 @@ export const getContributorsFromGitHub = async (): Promise<
   ContributorSchema[] | []
 > => {
   const res = await fetch(GH_URL, {
-    next: { revalidate: 60 },
+    next: { revalidate: 3600 },
   })
 
   if (!res.ok) {
