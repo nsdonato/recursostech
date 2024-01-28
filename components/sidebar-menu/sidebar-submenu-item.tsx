@@ -7,10 +7,10 @@ type SidebarSubMenuItemProps = {
 
 export const SidebarSubMenuItem = ({ submenu }: SidebarSubMenuItemProps) => {
 	return (
-		<li>
+		<li className='grid gap-1'>
 			<details>
 				<summary>{submenu.name}</summary>
-				<ul>
+				<ul className='grid gap-1'>
 					<SidebarMenuItem items={submenu.items} />
 				</ul>
 			</details>
