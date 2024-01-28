@@ -15,6 +15,8 @@
 > Checklist a modo recordatorio. Tildar lo que corresponda
 
 [] - Te agregaste como contribuidor/a, en el archivo mdx que tocaste?
-[] - Verificaste que createdAt y updatedAt del recurso y del menu, esten actualizados? (Si corresponde)
+[] - Verificaste que createdAt y updatedAt del recurso esten actualizados? (Si corresponde)
+[] - Verifica si corresponde actualizar createdAt en menu.mdx (para secciones nuevas)
+[] - Verifica si corresponde actualizar updatedAt en menu.mdx (para recursos nuevos o actualizados)
 [] - Agregué un link y funciona correctamente.
 [] - Agregaste test para cubrir la nueva funcionalidad (Solo al modificar código)
