@@ -1,24 +1,22 @@
-<!--
-Bienvenidx, si llegaste hasta aqui significa que vas a hacer un pull request
-Esta plantilla esta diseñada para organizar mejor nuestras ideas en el momento
-de realizar una Pull Request.
--->
-
-# RecursosTech PR Template
+<!-- Muchas gracias por tu tiempo ✨ y por contribuir a RecursosTech ♥️ -->
+<!-- Noe @vamoacodear --->
 
 ## Descripcion ✏️
-
-<!-- Descripcion del pull request, por favor explica brevemente de que trata este Pull Request -->
+<!-- Por favor, explicá brevemente de que trata este PR -->
 
 ## Cambios visuales 🎨
+<!-- Si hiciste un cambio visual, por favor subí capturas marcando los cambios así sabemos qué verificar -->
 
-<!-- Si agregaste una opción o una opción de menu, captura la pantalla y pegala acá, así vemos que quedó bien 🚀 -->
-
+<!-- OPCIONAL -->
 ## Como testear? 🐛
+<!-- Si es algo muy especifico que no se cubre con la ejecución de los test, por favor, contanos como testear el cambio. -->
 
-<!--OPCIONAL -->
-<!-- Como podemos testear estos cambios? -->
+> [!IMPORTANT]
+> Checklist a modo recordatorio. Tildar lo que corresponda
 
-<!-- Hey vos>
-<!-- Muchas gracias por tu tiempo ✨ y por contribuir a RecursosTech ♥️ -->
-<!-- Noe @vamoacodear>
+[] - Te agregaste como contribuidor/a, en el archivo mdx que tocaste?
+[] - Verificaste que createdAt y updatedAt del recurso esten actualizados? (Si corresponde)
+[] - Verifica si corresponde actualizar createdAt en menu.mdx (para secciones nuevas)
+[] - Verifica si corresponde actualizar updatedAt en menu.mdx (para recursos nuevos o actualizados)
+[] - Agregué un link y funciona correctamente.
+[] - Agregaste test para cubrir la nueva funcionalidad (Solo al modificar código)
