@@ -13,7 +13,6 @@ export const CardBody = ({ cover, imgPlaceholder }: CardBodyProps) => {
     ? cover.src.replace('.svg', '').split('/')[2]
     : cover.src.replace('.png', '').split('/')[2]
 
-  console.log(cover.src)
   return (
     <div
       key={imgPlaceholder}

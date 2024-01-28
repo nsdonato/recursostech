@@ -1,4 +1,3 @@
-import { WidthIcon } from '@radix-ui/react-icons'
 import Image from 'next/image'
 
 import { Figure as CoverType } from '@/lib/mdx/get-menu-item'
@@ -17,7 +16,7 @@ export const Figure = ({
   className,
   isSvg = true,
 }: FigureProps) => {
-  console.log(cover.src)
+  const hasCover = cover.src !== ''
   return (
     <figure>
       <Image
@@ -26,13 +25,9 @@ export const Figure = ({
         })}
         id={isSvg ? 'svg' : ''}
         alt={placeholder}
-        src={cover.src === '' ? '/ui/imgnotfound.svg' : cover.src}
-        width={cover.width}
-        height={cover.height}
-        style={{
-          width: cover.width,
-          height: cover.height,
-        }}
+        src={hasCover ? cover.src : '/ui/imgnotfound.svg'}
+        width={hasCover ? cover.width : 40}
+        height={hasCover ? cover.height : 40}
       />
     </figure>
   )
