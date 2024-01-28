@@ -14,7 +14,7 @@ export const Contributors = ({ contributors }: ContributorsProp) => {
 
 	return (
 		<div className='card bg-base-100 shadow-lg ring-1 mt-4 p-4 w-fit'>
-			<h3 className='card-title mb-4'>Colaboradores</h3>
+			<h2 className='card-title mb-4 text-xl'>Colaboradores</h2>
 			<p className='mb-4'>
 				Gracias a todxs los que aportaron en este documento! ✨
 			</p>
