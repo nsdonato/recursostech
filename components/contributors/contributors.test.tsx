@@ -4,16 +4,20 @@ import { Contributors } from './contributors'
 
 // HOW TO TEST ASYNC COMPONENTS: https://github.com/vercel/next.js/issues/47131
 /**
- * @param {function} Component
+ * @param {(props: {}) => Promise<JSX.Element>} Component
  * @param {*} props
  * @returns {Promise<()=>JSX.Element>}
  */
-async function resolvedComponent(Component, props) {
+async function resolvedComponent(
+  Component: (props: {}) => Promise<JSX.Element>,
+  props: {}
+) {
   const ComponentResolved = await Component(props)
   return () => ComponentResolved
 }
 
 describe('<Contributors />', () => {
+  //@ts-ignore
   global.fetch = jest.fn(() =>
     Promise.resolve({
       ok: true,

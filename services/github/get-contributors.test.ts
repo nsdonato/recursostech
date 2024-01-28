@@ -11,7 +11,7 @@ describe('getContributorsFromGitHub', () => {
         contributions: 0,
       },
     ]
-
+    // @ts-ignore
     global.fetch = jest.fn(() =>
       Promise.resolve({
         ok: true,
