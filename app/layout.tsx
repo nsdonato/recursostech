@@ -25,7 +25,7 @@ export default function RootLayout({
       </head>
       <body>
         <Navbar />
-        <div className='grid grid-cols-1 gap-4 lg:grid-cols-6'>
+        <div className='grid grid-cols-1 gap-4 lg:grid-cols-6 mt-4'>
           <SidebarMenu className='' />
           <main className='p-4 lg:col-span-5'>{children}</main>
         </div>
