@@ -1,21 +1,19 @@
 export const isToday = (date: Date) => {
-	const today = new Date()
+  const today = new Date()
 
-	return (
-		today.getFullYear() === date.getFullYear() &&
-		today.getMonth() === date.getMonth() &&
-		today.getDate() === date.getDate()
-	)
+  return (
+    today.getFullYear() === date.getFullYear() &&
+    today.getMonth() === date.getMonth() &&
+    today.getDate() === date.getDate()
+  )
 }
 
+// Show updated badge if updatedAt is within the last 3 days
 export const isUpdated = (updatedAt: Date) => {
-	if(isToday(updatedAt)) return true
+  const fechaActual = new Date()
 
-	const today = new Date()
+  const fechaLimite = new Date(fechaActual)
+  fechaLimite.setDate(fechaActual.getDate() - 3)
 
-	const isSameWeek =
-		updatedAt.getDate() - today.getDate() >= -today.getDay() &&
-		updatedAt.getDate() - today.getDate() <= 6 - today.getDay()
-
-	return isSameWeek
+  return updatedAt >= fechaLimite && updatedAt <= fechaActual
 }
