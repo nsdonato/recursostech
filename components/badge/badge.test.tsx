@@ -6,9 +6,7 @@ describe('<Badge />', () => {
   const today = new Date().toISOString()
   const yesterday = new Date(Date.now() - 86400000).toISOString()
   const lastWeek = new Date(Date.now() - 604800000).toISOString()
-  console.log(today)
-  console.log(yesterday)
-  console.log(lastWeek)
+
   test('renders the new badge', () => {
     const { getByText } = render(
       <Badge createdAt={today} updatedAt={yesterday} />

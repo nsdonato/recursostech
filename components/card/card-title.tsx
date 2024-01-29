@@ -1,14 +1,7 @@
-import { InfoExtra } from '@/lib/mdx/get-menu-item'
-
-import { getConferenceInfo } from './card-utils'
-
 type CardTitleProps = {
-	title?: string
-	infoExtra?: InfoExtra
+  title: string
 }
 
-export const CardTitle = ({ title, infoExtra }: CardTitleProps) => (
-	<p className='py-1 truncate'>
-		{infoExtra ? getConferenceInfo(infoExtra) : title}
-	</p>
+export const CardTitle = ({ title }: CardTitleProps) => (
+  <p className='py-1 truncate'>{title}</p>
 )
