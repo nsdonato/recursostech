@@ -50,6 +50,7 @@ const subMenuSchema = z.array(
 		createdAt: z.string(),
 		updatedAt: z.string(),
 		infoExtra: z.optional(infoExtraConferenceSchema),
+    category: z.string().default('Otros'),
 	})
 )
 
@@ -64,6 +65,8 @@ const parsedDataSchema = z.object({
 	description: z.string(),
 	contributors: z.array(contributorSchema),
 	submenu: subMenuSchema,
+	filter: z.boolean().default(false),
+	filter_by: z.string().default('titleCard'),
 })
 
 export type ParsedData = z.infer<typeof parsedDataSchema>
