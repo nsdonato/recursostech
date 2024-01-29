@@ -26,8 +26,11 @@ const mockData = {
       ],
       createdAt: '2024-01-14T00:00:00Z',
       updatedAt: '2024-01-14T00:00:00Z',
+      category: 'ejemplo',
     },
   ],
+  filter: false,
+  filter_by: 'ejemplo',
 }
 
 describe('getMenuItem', () => {
