@@ -14,5 +14,5 @@
 > [!IMPORTANT]
 > Checklist a modo recordatorio. Tildar lo que corresponda
 
-[] - Te agregaste como contribuidor/a, en el archivo mdx que tocaste?
-[] - Si tocaste código (no mdx), agregaste test para cubrirlo?
+- [ ] Te agregaste como contribuidor/a, en el archivo mdx que tocaste?
+- [ ] Si tocaste código (no mdx), agregaste test para cubrirlo?
