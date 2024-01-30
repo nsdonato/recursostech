@@ -30,7 +30,6 @@ const mockData = {
     },
   ],
   filter: false,
-  filter_by: 'ejemplo',
 }
 
 describe('getMenuItem', () => {
