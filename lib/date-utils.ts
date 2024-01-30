@@ -8,12 +8,12 @@ export const isToday = (date: Date) => {
   )
 }
 
-// Show updated badge if updatedAt is within the last 3 days
+// Show updated badge if updatedAt is within the last 2 days
 export const isUpdated = (updatedAt: Date) => {
   const today = new Date()
 
   const limitDate = new Date(today)
-  limitDate.setDate(today.getDate() - 3)
+  limitDate.setDate(today.getDate() - 2)
 
   return updatedAt >= limitDate && updatedAt <= today
 }

@@ -8,7 +8,7 @@ module.exports = {
   ],
   darkMode: 'class',
   daisyui: {
-    themes: ['light', 'synthwave'],
+    themes: ['light', 'dracula'],
   },
   theme: {
     extend: {
