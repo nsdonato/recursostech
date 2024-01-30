@@ -17,10 +17,10 @@ include_verbatim = false
 glob_ignore_case = false
 
 # Exclude URLs and mail addresses from checking (supports regex).
-exclude = ['^https://www\.twitter\.com', '^https://twitter\.com', '^https://discord\.io', '^https://discord\.com']
+exclude = ['^https://www\.twitter\.com', '^https://twitter\.com', '^https://discord\.io', '^https://discord\.com', 'https://github.com/nsdonato/recursostech/']
 
 # Exclude these filesystem paths from getting checked.
-exclude_path = ["./.git", "./.github", "./app", "./public"]
+exclude_path = ["./.git", "./.github", "./app", "./public", "./docs/doc_template_general.mdx"]
 
 # Exclude all private IPs from checking.
 # Equivalent to setting `exclude_private`, `exclude_link_local`, and
