@@ -22,6 +22,7 @@ const LinkTypeSchemaEnum = z.enum([
 	'Market',
 	'Discord',
 	'Ig',
+	'YouTube',
 ])
 
 const linkSchema = z.array(
