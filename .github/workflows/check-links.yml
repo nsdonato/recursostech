@@ -1,0 +1,16 @@
+name: Links
+
+on: [push]
+
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v1.9.0
+        with:
+            fail: true
+            args: --config './lychee.toml' .
