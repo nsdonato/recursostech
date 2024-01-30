@@ -4,9 +4,9 @@ import { z } from 'zod'
 import { readFile } from '../file-utils'
 
 interface MdxData {
-	data: unknown
-	source: string
-	matter: string
+  data: unknown
+  source: string
+  matter: string
 }
 
 /**
@@ -14,22 +14,22 @@ interface MdxData {
  * instead create a new function that uses this one
  */
 export async function getMdxData(filePath: string): Promise<MdxData> {
-	const rawContent = await readFile(filePath)
-	const result = matter(rawContent)
+  const rawContent = await readFile(filePath)
+  const result = matter(rawContent)
 
-	if (!result.data) {
-		throw new Error(`No data found for ${filePath}`)
-	}
+  if (!result.data) {
+    throw new Error(`No data found for ${filePath}`)
+  }
 
-	return {
-		data: result.data,
-		source: result.content,
-		matter: result.matter,
-	}
+  return {
+    data: result.data,
+    source: result.content,
+    matter: result.matter,
+  }
 }
 
 export const contributorSchema = z.object({
-	github_username: z.string(),
+  github_username: z.string(),
 })
 
 export type Contributor = z.infer<typeof contributorSchema>

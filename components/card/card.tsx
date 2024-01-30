@@ -1,4 +1,3 @@
-import { Badge } from '@/components/badge/badge'
 import { Video } from '@/components/video/video'
 
 import { WebLink } from '../web-link/web-link'
@@ -12,24 +11,10 @@ type CardProps = {
 }
 
 export const Card = ({ item }: CardProps) => {
-  const {
-    cover,
-    imgPlaceholder,
-    titleCard,
-    infoExtra,
-    links,
-    videos,
-    createdAt,
-    updatedAt,
-  } = item
+  const { cover, imgPlaceholder, titleCard, infoExtra, links, videos } = item
 
   return (
     <div className='card p-4 ring-1 bg-base-100 shadow-lg h-auto'>
-      <Badge
-        className='absolute top-0 right-0 m-2'
-        createdAt={createdAt}
-        updatedAt={updatedAt}
-      />
       <CardBody cover={cover} imgPlaceholder={imgPlaceholder} />
       <>
         <CardTitle title={imgPlaceholder} />
