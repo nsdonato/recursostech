@@ -1,3 +1,4 @@
+import { ButtonUp } from '@/components/button/button-up'
 import { Card } from '@/components/card/card'
 import { Contributors } from '@/components/contributors/contributors'
 import { Divider } from '@/components/divider/divider'
@@ -25,6 +26,7 @@ export default async function Slug({ params }: { params: { slug: string[] } }) {
         isIndex={false}
         contributors={data?.contributors as Contributor[]}
       />
+      <ButtonUp />
     </>
   )
 }
