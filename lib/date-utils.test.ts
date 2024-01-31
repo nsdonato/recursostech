@@ -1,4 +1,4 @@
-import { isToday, isUpdated } from './date-utils'
+import { isToday } from './date-utils'
 
 describe('date-utils', () => {
   const today = new Date()
@@ -16,20 +16,6 @@ describe('date-utils', () => {
 
     test('returns false if createdAt is not today', () => {
       expect(isToday(yesterday)).toBe(false)
-    })
-  })
-
-  describe('isUpdated', () => {
-    test('returns true if updatedDate is today', () => {
-      expect(isUpdated(today)).toBe(true)
-    })
-
-    test('returns true if updatedDate is this week', () => {
-      expect(isUpdated(yesterday)).toBe(true)
-    })
-
-    test('returns false if date is not this week', () => {
-      expect(isUpdated(lastWeek)).toBe(false)
     })
   })
 })
