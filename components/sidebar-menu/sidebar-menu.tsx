@@ -10,7 +10,7 @@ export const SidebarMenu = async ({ className }: SidebarMenuProps) => {
   const { data: menu } = await getMenu()
 
   return (
-    <nav className={className}>
+    <nav className={className} id='top'>
       <ul className='menu rounded-box shadow-lg grid gap-1'>
         <li>
           <LinkWrapper href='/'>Inicio</LinkWrapper>
