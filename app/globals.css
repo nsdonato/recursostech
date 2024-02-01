@@ -8,11 +8,11 @@
   --font-popi: 'Poppins', sans-serif;
   color-scheme: light;
 }
-:root[data-theme='synthwave'] {
-  color-scheme: synthwave;
+:root[data-theme='dracula'] {
+  color-scheme: dracula;
 }
 
-:root[data-theme='synthwave'] img#svg {
+:root[data-theme='dracula'] img#svg {
   filter: invert(1);
 }
 
@@ -25,13 +25,13 @@
   filter: none;
 }
 
-:root[data-theme='synthwave'] img#svg.youtube,
-:root[data-theme='synthwave'] img#svg.prettier,
-:root[data-theme='synthwave'] img#svg.nerdearla,
-:root[data-theme='synthwave'] img#svg.commitconf,
-:root[data-theme='synthwave'] img#svg.jest,
-:root[data-theme='synthwave'] img#svg.vitest,
-:root[data-theme='synthwave'] img#svg.playwright {
+:root[data-theme='dracula'] img#svg.youtube,
+:root[data-theme='dracula'] img#svg.prettier,
+:root[data-theme='dracula'] img#svg.nerdearla,
+:root[data-theme='dracula'] img#svg.commitconf,
+:root[data-theme='dracula'] img#svg.jest,
+:root[data-theme='dracula'] img#svg.vitest,
+:root[data-theme='dracula'] img#svg.playwright {
   filter: none;
 }
 
@@ -47,6 +47,10 @@ img.bilbostack {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 img,

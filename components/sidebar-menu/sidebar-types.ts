@@ -1,11 +1,9 @@
 export type Item = {
-	name: string
-	url: string
-	createdAt: string
-	updatedAt: string
+  name: string
+  url: string
 }[]
 
 export type SubmenuItem = {
-	name: string
-	items: Item
+  name: string
+  items: Item
 }

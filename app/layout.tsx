@@ -1,6 +1,7 @@
 import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 
+import { ButtonUp } from '@/components/button/button-up'
 import Navbar from '@/components/navbar/navbar'
 import { SidebarMenu } from '@/components/sidebar-menu/sidebar-menu'
 
@@ -30,6 +31,7 @@ export default function RootLayout({
           <main className='p-4 lg:col-span-5'>{children}</main>
         </div>
         <Analytics />
+        <ButtonUp />
       </body>
     </html>
   )
