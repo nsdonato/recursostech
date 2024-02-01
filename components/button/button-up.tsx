@@ -4,7 +4,7 @@ export const ButtonUp = () => {
   return (
     <WebLink
       href='#top'
-      className='btn btn-circle btn-accent fixed bottom-4 right-4'
+      className='lg:hidden btn btn-circle btn-accent fixed bottom-4 right-4'
       target=''>
       <svg
         width='40px'
