@@ -26,7 +26,6 @@ export default async function Slug({ params }: { params: { slug: string[] } }) {
         isIndex={false}
         contributors={data?.contributors as Contributor[]}
       />
-      <ButtonUp />
     </>
   )
 }
