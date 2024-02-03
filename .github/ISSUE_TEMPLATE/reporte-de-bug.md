@@ -4,6 +4,7 @@ about: Crear un reporte de bug para ayudarnos a mejorar
 title: "[BUG \U0001F41E] - Descripción"
 labels: bug
 assignees: nsdonato
+
 ---
 
 **Describe el bug**

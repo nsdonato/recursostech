@@ -4,6 +4,7 @@ about: Sugerí un video para un recurso especifico
 title: "[VIDEO \U0001F4F9] - Agregar video para recurso"
 labels: video
 assignees: nsdonato
+
 ---
 
 **Por favor indica el recurso para el que pedís el video**
