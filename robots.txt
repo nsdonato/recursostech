@@ -1,6 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-
-# Sitemap
-Sitemap: https://www.recursostech.dev/sitemap.xml
+Sitemap: https://recursostech.dev/sitemap.xml

@@ -28,7 +28,7 @@ function NavBar() {
         RecursosTech
       </Link>
       <div>
-        {Boolean(SHOW_SEARCH) && (
+        {SHOW_SEARCH === 'enabled' && (
           <DocSearch
             apiKey={SEARCH_API_KEY}
             indexName={'recursostech'}
