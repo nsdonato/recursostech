@@ -5,7 +5,7 @@ import { ButtonUp } from '@/components/button/button-up'
 import Navbar from '@/components/navbar/navbar'
 import { SidebarMenu } from '@/components/sidebar-menu/sidebar-menu'
 
-import { getTheme } from '../lib/getTheme'
+import { getTheme } from '../lib/get-theme'
 
 import './globals.css'
 
