@@ -3,6 +3,7 @@ import { WebLink } from '@/components/web-link/web-link'
 export const ButtonUp = () => {
   return (
     <WebLink
+      title='Back to the top'
       href='#top'
       className='lg:hidden btn btn-circle btn-accent fixed bottom-4 right-4'
       target=''>
