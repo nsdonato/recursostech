@@ -14,7 +14,7 @@ export const Card = ({ item }: CardProps) => {
   const { cover, imgPlaceholder, titleCard, infoExtra, links, videos } = item
 
   return (
-    <div className='card p-4 ring-1 bg-base-100 shadow-lg h-auto'>
+    <div className='card p-4 ring-1 bg-base-100 shadow-lg h-auto hover:scale-105 transition-transform'>
       <CardBody cover={cover} imgPlaceholder={imgPlaceholder} />
       <>
         <CardTitle title={imgPlaceholder} />
