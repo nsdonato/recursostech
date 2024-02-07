@@ -24,3 +24,17 @@ export async function getMenu() {
     data: parsedData,
   }
 }
+
+export async function getDocs() {
+  const mdxData = await getMdxData('./docs/menu.mdx')
+
+  const parsedData = schema.parse(mdxData.data)
+
+  const urls = parsedData
+    .map(parsedDataItem => parsedDataItem.items.map(item => item.url))
+    .flat()
+
+  return {
+    urls,
+  }
+}
