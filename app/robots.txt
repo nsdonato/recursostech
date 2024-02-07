@@ -1,0 +1,4 @@
+# Algolia-Crawler-Verif: 0A99C3A989AC1F13
+User-Agent: *
+Allow: /
+Sitemap: https://recursostech.dev/sitemap.xml
