@@ -16,12 +16,13 @@ const videoSchema = z.array(
 )
 
 const LinkTypeSchemaEnum = z.enum([
-  'Web',
-  'X',
-  'Twitch',
-  'Market',
-  'Discord',
-  'Ig',
+	'Web',
+	'X',
+	'Twitch',
+	'Market',
+	'Discord',
+	'Ig',
+	'YouTube',
 ])
 
 const linkSchema = z.array(
