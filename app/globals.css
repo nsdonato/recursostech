@@ -20,12 +20,10 @@
   filter: invert(1);
 }
 
-:root[data-theme='light'] img#svg.youtube,
 :root[data-theme='light'] img#svg.vitest {
   filter: none;
 }
 
-:root[data-theme='dracula'] img#svg.youtube,
 :root[data-theme='dracula'] img#svg.prettier,
 :root[data-theme='dracula'] img#svg.nerdearla,
 :root[data-theme='dracula'] img#svg.commitconf,
@@ -40,10 +38,12 @@
 :root[data-theme='dracula'] img#svg.angular,
 :root[data-theme='dracula'] img#svg.vue,
 :root[data-theme='dracula'] img#svg.svelte,
-:root[data-theme='dracula'] img#svg.react,
-:root[data-theme='dracula'] img#svg.csharp,
-:root[data-theme='dracula'] img#svg.java {
+:root[data-theme='dracula'] img#svg.react {
   filter: none;
+}
+
+:root[data-theme='dracula'] img[src*='.no-invert.svg' i] {
+  filter: none !important;
 }
 
 img.bilbostack {
