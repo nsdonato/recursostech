@@ -9,9 +9,8 @@ type CardBodyProps = {
 
 export const CardBody = ({ cover, imgPlaceholder }: CardBodyProps) => {
   const isSvg = cover.src ? cover.src.includes('.svg') : true
-  const coverName = isSvg
-    ? cover.src.replace('.svg', '').split('/')[2]
-    : cover.src.replace('.png', '').split('/')[2]
+  const srcSplit = cover.src.split('/')
+  const srcName = srcSplit[srcSplit.length - 1].replace(/[\/.\b](svg|png)/g, '')
 
   return (
     <div
@@ -21,9 +20,9 @@ export const CardBody = ({ cover, imgPlaceholder }: CardBodyProps) => {
       <div className='card-body items-center justify-center h-40 w-full'>
         <Figure
           isSvg={isSvg}
-          className={coverName}
           cover={cover}
           placeholder={imgPlaceholder}
+          id={srcName}
         />
       </div>
     </div>
