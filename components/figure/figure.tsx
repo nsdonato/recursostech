@@ -8,6 +8,7 @@ type FigureProps = {
   placeholder: string
   className?: string
   isSvg?: boolean
+  id?: string
 }
 
 export const Figure = ({
@@ -15,15 +16,16 @@ export const Figure = ({
   placeholder,
   className,
   isSvg = true,
+  id,
 }: FigureProps) => {
   const hasCover = cover.src !== ''
   return (
     <figure>
       <Image
+        id={id}
         className={cn(className, {
-          'rounded-full': !isSvg,
+          svg: isSvg,
         })}
-        id={isSvg ? 'svg' : ''}
         alt={placeholder}
         src={hasCover ? cover.src : '/ui/imgnotfound.svg'}
         width={hasCover ? cover.width : 40}
