@@ -16,13 +16,13 @@ const videoSchema = z.array(
 )
 
 const LinkTypeSchemaEnum = z.enum([
-	'Web',
-	'X',
-	'Twitch',
-	'Market',
-	'Discord',
-	'Ig',
-	'YouTube',
+  'Web',
+  'X',
+  'Twitch',
+  'Market',
+  'Discord',
+  'Ig',
+  'YouTube',
 ])
 
 const linkSchema = z.array(
@@ -67,9 +67,7 @@ const parsedDataSchema = z.object({
 
 export type ParsedData = z.infer<typeof parsedDataSchema>
 
-export async function getMenuItem(slug: string[]) {
-  const filePath = slug.join('/')
-
+export async function getMenuItem(filePath) {
   if (filePath.includes('favicon')) {
     return {
       data: null,
