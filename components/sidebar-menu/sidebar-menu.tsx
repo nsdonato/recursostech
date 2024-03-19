@@ -1,5 +1,8 @@
+import { usePathname } from 'next/navigation'
+
 import { getMenu } from '@/lib/mdx/get-menu'
 
+import { SidebarDetails } from './sidebar-details'
 import LinkWrapper from './sidebar-selected'
 
 type SidebarMenuProps = {
@@ -17,8 +20,7 @@ export const SidebarMenu = async ({ className }: SidebarMenuProps) => {
         </li>
         {menu.map(menuItem => (
           <li key={menuItem.name}>
-            <details>
-              <summary>{menuItem.name}</summary>
+            <SidebarDetails name={menuItem.name}>
               <ul className='grid gap-1'>
                 {menuItem.items.map((item, index) => {
                   return (
@@ -32,7 +34,7 @@ export const SidebarMenu = async ({ className }: SidebarMenuProps) => {
                   )
                 })}
               </ul>
-            </details>
+            </SidebarDetails>
           </li>
         ))}
       </ul>
