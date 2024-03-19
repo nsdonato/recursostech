@@ -33,6 +33,10 @@ function NavBar() {
             apiKey={SEARCH_API_KEY}
             indexName={'recursostech'}
             appId={SEARCH_APP_ID}
+            // transformItems={items => {
+            //   console.log(items)
+            //   return items
+            // }}
           />
         )}
       </div>
