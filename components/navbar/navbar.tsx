@@ -7,6 +7,8 @@ import { DocSearch } from '@docsearch/react'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
 
+import { EventNames } from '@/lib/metrics/event-name-types'
+
 import { Figure } from '../figure/figure'
 import { WebLink } from '../web-link/web-link'
 
@@ -38,7 +40,9 @@ function NavBar() {
       </div>
       <div className='items-start md:mr-2'>
         <ThemeController />
-        <WebLink href='https://github.com/nsdonato/recursostech'>
+        <WebLink
+          href='https://github.com/nsdonato/recursostech'
+          eventName={EventNames.CLICK_ON_GO_TO_GITHUB_REPO}>
           <Figure
             cover={{
               src: '/ui/github.svg',
