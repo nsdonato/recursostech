@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 import { Contributor } from '@/lib/mdx/mdx-utils'
+import { EventNames } from '@/lib/metrics/event-name-types'
 import { adaptContributorsFromMdx } from '@/services/github/adapters'
 import { getContributorsFromGitHub } from '@/services/github/get-contributors'
 
@@ -34,7 +35,9 @@ export const Contributors = async ({
         {data.map(contributor => {
           return (
             <li key={`contributor-${contributor.name}`}>
-              <WebLink href={contributor.profile}>
+              <WebLink
+                href={contributor.profile}
+                eventName={`${EventNames.CLICK_ON_GH_CONTRIBUTOR} - ${contributor.name}`}>
                 <Image
                   data-testid={`contributor-${contributor.name}`}
                   loading='lazy'
