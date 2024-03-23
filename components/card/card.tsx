@@ -23,6 +23,7 @@ export const Card = ({ item }: CardProps) => {
         <div className='flex flex-wrap gap-2 pt-1'>
           {links?.map(({ url, type }, index) => (
             <WebLink
+              eventName={`Click on ${imgPlaceholder} - ${type.toLowerCase()}`}
               key={index}
               className='btn btn-sm btn-outline btn-accent'
               href={url}>

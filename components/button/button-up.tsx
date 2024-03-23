@@ -1,8 +1,10 @@
 import { WebLink } from '@/components/web-link/web-link'
+import { EventNames } from '@/lib/metrics/event-name-types'
 
 export const ButtonUp = () => {
   return (
     <WebLink
+      eventName={EventNames.CLICK_ON_GO_TO_TOP_BUTTON}
       title='Back to the top'
       href='#top'
       className='lg:hidden btn btn-circle btn-accent fixed bottom-4 right-4'
