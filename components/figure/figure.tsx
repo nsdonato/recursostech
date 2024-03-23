@@ -30,6 +30,10 @@ export const Figure = ({
         src={hasCover ? cover.src : '/ui/imgnotfound.svg'}
         width={hasCover ? cover.width : 40}
         height={hasCover ? cover.height : 40}
+        style={{
+          width: hasCover ? cover.width : 40,
+          height: hasCover ? cover.height : 40,
+        }}
       />
     </figure>
   )

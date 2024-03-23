@@ -3,7 +3,8 @@ type WebLinkProps = {
   href: string
   className?: string
   target?: string
-  title?:string
+  title?: string
+  eventName: string
 }
 
 export const WebLink = ({
@@ -12,8 +13,10 @@ export const WebLink = ({
   title,
   className,
   target = '_blank',
+  eventName,
 }: WebLinkProps) => (
   <a
+    data-umami-event={eventName}
     href={href}
     title={title}
     className={className}

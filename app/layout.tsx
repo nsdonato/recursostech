@@ -1,5 +1,5 @@
-import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
+import Script from 'next/script'
 
 import { ButtonUp } from '@/components/button/button-up'
 import Navbar from '@/components/navbar/navbar'
@@ -19,10 +19,24 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const UMAMI_ANALYTICS = process.env.NEXT_PUBLIC_ANALYTICS_ID
+  const environment = process.env.NODE_ENV
+
   return (
     <html lang='es' className={'font-popi font-popi-light'}>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: getTheme }} />
+        <Script
+          id='data-theme'
+          dangerouslySetInnerHTML={{ __html: getTheme }}
+        />
+        {environment === 'production' && (
+          <Script
+            id='umami'
+            defer
+            src='https://eu.umami.is/script.js'
+            data-website-id={UMAMI_ANALYTICS}
+          />
+        )}
       </head>
       <body>
         <Navbar />
@@ -32,7 +46,6 @@ export default function RootLayout({
             {children}
           </main>
         </div>
-        <Analytics />
         <ButtonUp />
       </body>
     </html>
