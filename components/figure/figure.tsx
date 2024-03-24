@@ -1,10 +1,10 @@
 import Image from 'next/image'
 
-import { Figure as CoverType } from '@/lib/mdx/get-menu-item'
+import { Cover } from '@/lib/db-types'
 import { cn } from '@/lib/utils'
 
 type FigureProps = {
-  cover: CoverType
+  cover: Cover
   placeholder: string
   className?: string
   isSvg?: boolean
