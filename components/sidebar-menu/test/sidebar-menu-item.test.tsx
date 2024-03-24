@@ -1,4 +1,5 @@
-import { Item } from '@/components/sidebar-menu/sidebar-types'
+import { Item } from 'components/sidebar-menu/sidebar-types'
+
 import { render } from '@/lib/test-utils'
 
 import { SidebarMenuItem } from '../sidebar-menu-item'

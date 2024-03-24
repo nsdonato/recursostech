@@ -1,4 +1,4 @@
-import { InfoExtra } from '@/lib/mdx/get-menu-item'
+import { InfoExtra } from '@/lib/tdx-types'
 
 import { getConferenceInfo } from './card-utils'
 

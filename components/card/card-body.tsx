@@ -1,9 +1,9 @@
-import { Figure as CoverType } from '@/lib/mdx/get-menu-item'
+import { Cover } from '@/lib/tdx-types'
 
 import { Figure } from '../figure/figure'
 
 type CardBodyProps = {
-  cover: CoverType
+  cover: Cover
   imgPlaceholder: string
 }
 

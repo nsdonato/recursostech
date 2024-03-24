@@ -1,5 +1,5 @@
-import { InfoExtra } from '@/lib/mdx/get-menu-item'
+import { InfoExtra } from '@/lib/tdx-types'
 
 export const getConferenceInfo = (infoExtra: InfoExtra) => {
-	return `${infoExtra?.country} - ${infoExtra?.city} | ${infoExtra?.date.days.join(', ')} de ${infoExtra?.date.month}`
+  return `${infoExtra?.country} - ${infoExtra?.city} | ${infoExtra?.date.days.join(', ')} de ${infoExtra?.date.month}`
 }

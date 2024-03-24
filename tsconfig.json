@@ -28,7 +28,7 @@
 				"components/*"
 			],
 			"@/services/*": [
-				"services/*"
+				"modules/contributors/api/*"
 			],
 			"@/lib/*": [
 				"lib/*"

@@ -4,9 +4,11 @@
 import { useEffect, useState } from 'react'
 
 import { DARK_THEME, LIGHT_THEME } from '@/lib/constants'
-import { EventNames } from '@/lib/metrics/event-name-types'
+import { EventNames } from '@/lib/metrics/metrics-types'
 
 import { Figure } from '../figure/figure'
+
+// @ts-nocheck
 
 // @ts-nocheck
 

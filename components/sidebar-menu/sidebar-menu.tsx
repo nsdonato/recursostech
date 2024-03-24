@@ -1,6 +1,4 @@
-import { usePathname } from 'next/navigation'
-
-import { getMenu } from '@/lib/mdx/get-menu'
+import { menu } from 'db/menu'
 
 import { SidebarDetails } from './sidebar-details'
 import LinkWrapper from './sidebar-selected'
@@ -9,9 +7,7 @@ type SidebarMenuProps = {
   className?: string
 }
 
-export const SidebarMenu = async ({ className }: SidebarMenuProps) => {
-  const { data: menu } = await getMenu()
-
+export const SidebarMenu = ({ className }: SidebarMenuProps) => {
   return (
     <nav className={className} id='top'>
       <ul className='menu rounded-box shadow-lg grid gap-1'>

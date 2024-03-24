@@ -1,9 +1,8 @@
+import { ButtonUp } from 'components/button/button-up'
+import Navbar from 'components/navbar/navbar'
+import { SidebarMenu } from 'components/sidebar-menu/sidebar-menu'
 import type { Metadata } from 'next'
 import Script from 'next/script'
-
-import { ButtonUp } from '@/components/button/button-up'
-import Navbar from '@/components/navbar/navbar'
-import { SidebarMenu } from '@/components/sidebar-menu/sidebar-menu'
 
 import { getTheme } from '../lib/get-theme'
 
