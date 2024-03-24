@@ -1,5 +1,4 @@
-import { WebLink } from 'components/web-link/web-link'
-
+import { WebLink } from '@/components/web-link/web-link'
 import { EventNames } from '@/lib/metrics/metrics-types'
 
 export const ButtonUp = () => {

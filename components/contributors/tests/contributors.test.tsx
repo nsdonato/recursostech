@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 
-import { Contributors } from './contributors'
+import { Contributors } from '../contributors'
 
 // HOW TO TEST ASYNC COMPONENTS: https://github.com/vercel/next.js/issues/47131
 /**
@@ -16,7 +16,7 @@ async function resolvedComponent(
   return () => ComponentResolved
 }
 
-describe.skip('<Contributors />', () => {
+describe('<Contributors />', () => {
   //@ts-ignore
   global.fetch = jest.fn(() =>
     Promise.resolve({
@@ -24,11 +24,30 @@ describe.skip('<Contributors />', () => {
       json: () =>
         Promise.resolve([
           {
-            id: 1,
             login: 'nsdonato',
-            avatar_url: 'https://example.com/avatar1.jpg',
-            html_url: 'https://example.com/profile1',
-            contributions: 0,
+            id: 7875216,
+            node_id: 'MDQ6VXNlcjc4NzUyMTY=',
+            avatar_url: 'https://avatars.githubusercontent.com/u/7875216?v=4',
+            gravatar_id: '',
+            url: 'https://api.github.com/users/nsdonato',
+            html_url: 'https://github.com/nsdonato',
+            followers_url: 'https://api.github.com/users/nsdonato/followers',
+            following_url:
+              'https://api.github.com/users/nsdonato/following{/other_user}',
+            gists_url: 'https://api.github.com/users/nsdonato/gists{/gist_id}',
+            starred_url:
+              'https://api.github.com/users/nsdonato/starred{/owner}{/repo}',
+            subscriptions_url:
+              'https://api.github.com/users/nsdonato/subscriptions',
+            organizations_url: 'https://api.github.com/users/nsdonato/orgs',
+            repos_url: 'https://api.github.com/users/nsdonato/repos',
+            events_url:
+              'https://api.github.com/users/nsdonato/events{/privacy}',
+            received_events_url:
+              'https://api.github.com/users/nsdonato/received_events',
+            type: 'User',
+            site_admin: false,
+            contributions: 35,
           },
         ]),
     })

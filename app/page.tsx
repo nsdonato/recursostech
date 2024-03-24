@@ -1,8 +1,9 @@
-import { Contributors } from 'components/contributors/contributors'
-import { Figure } from 'components/figure/figure'
-import { Header } from 'components/header/header'
-import { WebLink } from 'components/web-link/web-link'
 import { noeSocialNetworks } from 'db/vamoacodear-socials'
+
+import { Contributors } from '@/components/contributors/contributors'
+import { Figure } from '@/components/figure/figure'
+import { Header } from '@/components/header/header'
+import { WebLink } from '@/components/web-link/web-link'
 
 export default async function Home() {
   return (

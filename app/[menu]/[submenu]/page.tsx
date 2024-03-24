@@ -1,9 +1,8 @@
-import { ButtonUp } from 'components/button/button-up'
-import { Card } from 'components/card/card'
-import { Contributors } from 'components/contributors/contributors'
-import { Divider } from 'components/divider/divider'
-import { Header } from 'components/header/header'
-
+import { ButtonUp } from '@/components/button/button-up'
+import { Card } from '@/components/card/card'
+import { Contributors } from '@/components/contributors/contributors'
+import { Divider } from '@/components/divider/divider'
+import { Header } from '@/components/header/header'
 import { getSubMenuData } from '@/lib/db-utils'
 
 type SubmenuPageProps = {

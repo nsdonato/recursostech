@@ -1,4 +1,4 @@
-import { Item } from 'components/sidebar-menu/sidebar-types'
+import { Item } from '@/components/sidebar-menu/sidebar-types'
 
 import LinkWrapper from './sidebar-selected'
 

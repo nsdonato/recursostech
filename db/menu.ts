@@ -1,5 +1,7 @@
 import { Menu } from '@/lib/menu-types'
 
+import { Video } from './../lib/db-types'
+
 export const menu: Menu[] = [
   {
     name: 'Frontend',
@@ -138,6 +140,15 @@ export const menu: Menu[] = [
       {
         name: 'Streamers',
         url: '/ciberseguridad/streamers',
+      },
+    ],
+  },
+  {
+    name: 'Videojuegos',
+    items: [
+      {
+        name: 'Streamers',
+        url: '/videogames/streamers',
       },
     ],
   },

@@ -1,6 +1,7 @@
+import { menu } from 'db/menu'
 import { MetadataRoute } from 'next'
 
-import { menu } from '../db/menu'
+import { getUpdatedDate } from '@/lib/file-utils'
 
 const WEBSITE_HOST_URL = process.env.SITE_URL || 'https://recursostech.dev'
 // TODO
@@ -23,14 +24,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     { urls: [] as string[] }
   )
+
   const changeFrequency = 'daily' as changeFrequency
-
   const routes = ['', ...urls].map(url => {
-    const path = url === '' ? '/docs/index' : url
-
+    const path = url === '' ? '' : url
     return {
       url: url === '' ? WEBSITE_HOST_URL : `${WEBSITE_HOST_URL}${path}`,
-      lastModified: new Date(), // getUpdatedDate(path),
+      lastModified: url === '' ? new Date() : getUpdatedDate(`/db${path}`),
       changeFrequency,
     }
   })
