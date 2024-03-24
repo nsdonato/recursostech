@@ -1,10 +1,10 @@
+import { menu } from 'db/menu'
 import { MetadataRoute } from 'next'
 
 import { getUpdatedDate } from '@/lib/file-utils'
-import { getDocs } from '@/lib/mdx/get-menu'
 
 const WEBSITE_HOST_URL = process.env.SITE_URL || 'https://recursostech.dev'
-
+// TODO
 type changeFrequency =
   | 'always'
   | 'hourly'
@@ -15,15 +15,22 @@ type changeFrequency =
   | 'never'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  let { urls } = await getDocs()
+  let { urls } = menu.reduce(
+    (acc, menu) => {
+      menu.items.forEach(item => {
+        acc.urls.push(item.url)
+      })
+      return acc
+    },
+    { urls: [] as string[] }
+  )
+
   const changeFrequency = 'daily' as changeFrequency
-
   const routes = ['', ...urls].map(url => {
-    const path = url === '' ? '/docs/index' : url
-
+    const path = url === '' ? '' : url
     return {
       url: url === '' ? WEBSITE_HOST_URL : `${WEBSITE_HOST_URL}${path}`,
-      lastModified: getUpdatedDate(path),
+      lastModified: url === '' ? new Date() : getUpdatedDate(`/db${path}`),
       changeFrequency,
     }
   })

@@ -15,4 +15,4 @@
 > Checklist a modo recordatorio. Tildar lo que corresponda
 
 - [ ] Te agregaste como contribuidor/a, en el archivo mdx que tocaste?
-- [ ] Si tocaste código (no mdx), agregaste test para cubrirlo?
+- [ ] Si tocaste código (no archivos db), agregaste test para cubrirlo?

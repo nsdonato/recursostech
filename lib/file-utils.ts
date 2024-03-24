@@ -7,6 +7,6 @@ export const readFile = (localPath: string) => {
 }
 
 export const getUpdatedDate = (localPath: string) => {
-  const stats = fs.statSync(path.join(process.cwd(), localPath + '.mdx'))
+  const stats = fs.statSync(path.join(process.cwd(), localPath + '.ts'))
   return stats.mtime
 }

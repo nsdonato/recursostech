@@ -7,13 +7,12 @@ import { DocSearch } from '@docsearch/react'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
 
-import { EventNames } from '@/lib/metrics/event-name-types'
-
-import { Figure } from '../figure/figure'
-import { WebLink } from '../web-link/web-link'
+import { Figure } from '@/components/figure/figure'
+import { WebLink } from '@/components/web-link/web-link'
+import { EventNames } from '@/lib/metrics/metrics-types'
 
 const ThemeController = dynamic(
-  () => import('../theme-controller/theme-controller'),
+  () => import('@/components/theme-controller/theme-controller'),
   {
     ssr: false,
   }

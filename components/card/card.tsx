@@ -1,13 +1,12 @@
-import { Video } from '@/components/video/video'
+import { PageItem } from '@/lib/db-types'
 
+import { Video } from '../video/video'
 import { WebLink } from '../web-link/web-link'
 import { CardBody } from './card-body'
 import { CardInformation } from './card-information'
-import { CardTitle } from './card-title'
-import { CardItem } from './card-types'
 
 type CardProps = {
-  item: CardItem
+  item: PageItem
 }
 
 export const Card = ({ item }: CardProps) => {
@@ -17,7 +16,7 @@ export const Card = ({ item }: CardProps) => {
     <div className='card p-4 ring-1 bg-base-100 shadow-lg h-auto hover:scale-105 transition-transform'>
       <CardBody cover={cover} imgPlaceholder={imgPlaceholder} />
       <>
-        <CardTitle title={imgPlaceholder} />
+        <p className='py-1 truncate'>{imgPlaceholder}</p>
         <div className='divider m-0 p-0'></div>
         <CardInformation title={titleCard} infoExtra={infoExtra} />
         <div className='flex flex-wrap gap-2 pt-1'>

@@ -1,14 +1,14 @@
 import Image from 'next/image'
 
-import { Contributor } from '@/lib/mdx/mdx-utils'
-import { EventNames } from '@/lib/metrics/event-name-types'
-import { adaptContributorsFromMdx } from '@/services/github/adapters'
-import { getContributorsFromGitHub } from '@/services/github/get-contributors'
+import { PageContributor } from '@/lib/db-types'
+import { EventNames } from '@/lib/metrics/metrics-types'
+import { getContributorsFromGitHub } from '@/services/get-contributors'
 
 import { WebLink } from '../web-link/web-link'
+import { getContributorsFromFile } from './contributors-utils'
 
 type ContributorsProp = {
-  contributors?: Contributor[]
+  contributors?: PageContributor[]
   isIndex?: boolean
 }
 
@@ -21,7 +21,7 @@ export const Contributors = async ({
   if (isIndex) {
     data = await getContributorsFromGitHub()
   } else {
-    data = adaptContributorsFromMdx(contributors)
+    data = getContributorsFromFile(contributors)
   }
 
   return (

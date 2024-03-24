@@ -1,6 +1,6 @@
-import { InfoExtra } from '@/lib/mdx/get-menu-item'
+import { InfoExtra } from '@/lib/db-types'
 
-import { getConferenceInfo } from './card-utils'
+import { getConferenceInfo } from './utils/card-utils'
 
 type CardTitleProps = {
   title?: string
