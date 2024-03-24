@@ -30,7 +30,7 @@ const components_library: DocPage = {
       titleCard: '',
       links: [{ type: LinkType.Web, url: 'https://tailwindui.com/' }],
       cover: {
-        src: '/frontend/tailwind.svg',
+        src: '/frontend/tailwind.no-invert.svg',
         height: 80,
         width: 80,
       },

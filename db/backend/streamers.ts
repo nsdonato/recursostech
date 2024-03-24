@@ -23,7 +23,7 @@ export const sreamers: DocPage = {
       cover: {
         src: '/backend/streamers/todocode.png',
         height: 80,
-        width: 90,
+        width: 80,
       },
       videos: [],
     },

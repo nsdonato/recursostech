@@ -20,8 +20,8 @@ const animation: DocPage = {
       ],
       cover: {
         src: '/frontend/animation/animatecss.png',
-        height: 190,
-        width: 190,
+        height: 50,
+        width: 90,
       },
       videos: [],
     },
@@ -69,7 +69,7 @@ const animation: DocPage = {
       cover: {
         src: '/frontend/animation/aos.png',
         height: 70,
-        width: 70,
+        width: 90,
       },
       videos: [],
     },
@@ -148,7 +148,7 @@ const animation: DocPage = {
       ],
       cover: {
         src: '/frontend/animation/hovercss.png',
-        height: 180,
+        height: 80,
         width: 200,
       },
       videos: [],
@@ -165,7 +165,7 @@ const animation: DocPage = {
       cover: {
         src: '/frontend/animation/motion.png',
         height: 80,
-        width: 100,
+        width: 80,
       },
       videos: [],
     },
@@ -212,8 +212,8 @@ const animation: DocPage = {
       ],
       cover: {
         src: '/frontend/animation/react-magic.png',
-        height: 180,
-        width: 100,
+        height: 80,
+        width: 80,
       },
       videos: [],
     },

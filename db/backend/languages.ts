@@ -81,8 +81,8 @@ export const languages: DocPage = {
         'Runtime para JavaScript y TypeScript basado en el motor V8 y escrito en Rust.',
       cover: {
         src: '/backend/languages/deno-logo.no-invert.svg',
-        height: 80,
-        width: 90,
+        height: 90,
+        width: 100,
       },
       links: [{ type: LinkType.Web, url: 'https://deno.com/' }],
       videos: [],
@@ -118,7 +118,7 @@ export const languages: DocPage = {
       cover: {
         src: '/backend/languages/ruby-logo.no-invert.svg',
         height: 80,
-        width: 90,
+        width: 60,
       },
       links: [{ type: LinkType.Web, url: 'https://www.ruby-lang.org/es/' }],
       videos: [],
@@ -129,7 +129,7 @@ export const languages: DocPage = {
       cover: {
         src: '/backend/languages/kotlin-logo.no-invert.svg',
         height: 80,
-        width: 90,
+        width: 60,
       },
       links: [{ type: LinkType.Web, url: 'https://kotlinlang.org/' }],
       videos: [],
