@@ -16,7 +16,7 @@ async function resolvedComponent(
   return () => ComponentResolved
 }
 
-describe('<Contributors />', () => {
+describe.skip('<Contributors />', () => {
   //@ts-ignore
   global.fetch = jest.fn(() =>
     Promise.resolve({

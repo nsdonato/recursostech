@@ -1,6 +1,6 @@
 import { Contributor } from 'modules/contributors/models/contributor'
 
-import { PageContributor } from '@/lib/tdx-types'
+import { PageContributor } from '@/lib/db-types'
 
 export const getContributorsFromFile = (
   contributors: PageContributor[]

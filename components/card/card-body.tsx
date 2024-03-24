@@ -1,4 +1,4 @@
-import { Cover } from '@/lib/tdx-types'
+import { Cover } from '@/lib/db-types'
 
 import { Figure } from '../figure/figure'
 

@@ -1,4 +1,4 @@
-import { DocPage, LinkType } from '@/lib/tdx-types'
+import { DocPage, LinkType } from '@/lib/db-types'
 
 const spain: DocPage = {
   title: 'Conferencias',

@@ -4,7 +4,7 @@ import { Contributors } from 'components/contributors/contributors'
 import { Divider } from 'components/divider/divider'
 import { Header } from 'components/header/header'
 
-import { getSubMenuData } from '@/lib/tdx-utils'
+import { getSubMenuData } from '@/lib/db-utils'
 
 type SubmenuPageProps = {
   params: {

@@ -1,4 +1,4 @@
-import { DocPage, LinkType } from '@/lib/tdx-types'
+import { DocPage, LinkType } from '@/lib/db-types'
 
 const vscode: DocPage = {
   title: 'Extensions',
@@ -10,15 +10,16 @@ const vscode: DocPage = {
     { github_username: 'Victorioo' },
     { github_username: 'guskpo20' },
     { github_username: 'ricardomaldonado93' },
+    { github_username: 'eduWTR' },
   ],
   pageItems: [
     {
       imgPlaceholder: 'Easy Snippet',
       titleCard: '',
       cover: {
-        src: '',
-        height: 40,
-        width: 40,
+        src: '/extensions/vscode/easy-snippet.no-invert.svg',
+        height: 60,
+        width: 60,
       },
       links: [
         {
@@ -32,7 +33,7 @@ const vscode: DocPage = {
       imgPlaceholder: 'Prettier - Code formatter',
       titleCard: '',
       cover: {
-        src: '/vscode/extensions/prettier.no-invert.svg',
+        src: '/extensions/vscode/prettier.no-invert.svg',
         height: 50,
         width: 50,
       },
@@ -57,9 +58,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'ESLint',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/eslint-logo.no-invert.svg',
+        height: 60,
+        width: 200,
       },
       links: [
         {
@@ -86,9 +87,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'Live Server',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/live-server.no-invert.svg',
+        height: 60,
+        width: 60,
       },
       links: [
         {
@@ -102,9 +103,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'Auto Import',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/auto-import-icon.png',
+        height: 60,
+        width: 60,
       },
       links: [
         {
@@ -118,7 +119,7 @@ const vscode: DocPage = {
       imgPlaceholder: 'Console Ninja',
       titleCard: '',
       cover: {
-        src: '',
+        src: '/extensions/vscode/console-ninja.no-invert.svg',
         height: 50,
         width: 50,
       },
@@ -127,6 +128,10 @@ const vscode: DocPage = {
           type: LinkType.Marketplace,
           url: 'https://marketplace.visualstudio.com/items?itemName=WallabyJs.console-ninja',
         },
+        {
+          type: LinkType.Web,
+          url: 'https://console-ninja.com/',
+        },
       ],
       videos: [],
     },
@@ -134,7 +139,7 @@ const vscode: DocPage = {
       imgPlaceholder: 'Conventional Commits',
       titleCard: '',
       cover: {
-        src: '',
+        src: '/extensions/vscode/conventional-commits.no-invert.svg',
         height: 50,
         width: 50,
       },
@@ -150,7 +155,7 @@ const vscode: DocPage = {
       imgPlaceholder: 'GitLens - Git supercharged',
       titleCard: '',
       cover: {
-        src: '',
+        src: '/extensions/vscode/gitlens-icon.png',
         height: 50,
         width: 50,
       },
@@ -159,6 +164,10 @@ const vscode: DocPage = {
           type: LinkType.Marketplace,
           url: 'https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens',
         },
+        {
+          type: LinkType.Web,
+          url: 'https://www.gitkraken.com/gitlens',
+        },
       ],
       videos: [],
     },
@@ -166,9 +175,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'Image preview',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/image-preview-icon.png',
+        height: 60,
+        width: 60,
       },
       links: [
         {
@@ -182,7 +191,7 @@ const vscode: DocPage = {
       imgPlaceholder: 'Import Cost',
       titleCard: '',
       cover: {
-        src: '',
+        src: '/extensions/vscode/import-cost-icon.png',
         height: 50,
         width: 50,
       },
@@ -198,9 +207,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'Live Preview',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/live-preview-icon.png',
+        height: 60,
+        width: 60,
       },
       links: [
         {
@@ -214,9 +223,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'Paste JSON as Code',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/quicktype.no-invert.svg',
+        height: 80,
+        width: 190,
       },
       links: [
         {
@@ -230,9 +239,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'Pretty TypeScript Errors',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/pretty-typescript-errors-icon.png',
+        height: 60,
+        width: 60,
       },
       links: [
         {
@@ -246,9 +255,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'Version Lens',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/versionlens-icon.png',
+        height: 70,
+        width: 70,
       },
       links: [
         {
@@ -260,11 +269,11 @@ const vscode: DocPage = {
     },
     {
       imgPlaceholder: 'Tailwind CSS IntelliSense',
-      titleCard: '',
+      titleCard: '/extensions/vscode/tailwindcss-intellisense-icon.png',
       cover: {
         src: '',
-        height: 50,
-        width: 50,
+        height: 60,
+        width: 60,
       },
       links: [
         {
@@ -278,7 +287,7 @@ const vscode: DocPage = {
       imgPlaceholder: 'Regex Previewer',
       titleCard: '',
       cover: {
-        src: '',
+        src: '/extensions/vscode/regex-previewer-icon.png',
         height: 50,
         width: 50,
       },
@@ -299,9 +308,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'Turbo Console Log',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/turbo-console-icon.png',
+        height: 70,
+        width: 70,
       },
       links: [
         {
@@ -320,9 +329,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'Code Spell Checker',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/spellcheck-icon.png',
+        height: 60,
+        width: 60,
       },
       links: [
         {
@@ -336,9 +345,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'Colorize',
       titleCard: '',
       cover: {
-        src: '',
+        src: '/extensions/vscode/colorize.no-invert.svg',
         height: 50,
-        width: 50,
+        width: 150,
       },
       links: [
         {
@@ -352,9 +361,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'DotENV',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/dotenv-icon.png',
+        height: 60,
+        width: 60,
       },
       links: [
         {
@@ -367,14 +376,18 @@ const vscode: DocPage = {
       imgPlaceholder: 'Duckly',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/duckly.png',
+        height: 60,
+        width: 60,
       },
       links: [
         {
           type: LinkType.Marketplace,
           url: 'https://marketplace.visualstudio.com/items?itemName=gitduck.code-streaming',
+        },
+        {
+          type: LinkType.Web,
+          url: 'https://duckly.com/',
         },
       ],
     },
@@ -382,9 +395,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'Error Lens',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/error-lens-icon.png',
+        height: 60,
+        width: 60,
       },
       links: [
         {
@@ -397,9 +410,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'ES7+ React/Redux/React-Native snippets',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/es7-react-js-icon.png',
+        height: 70,
+        width: 70,
       },
       links: [
         {
@@ -412,9 +425,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'Excalidraw',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/excalidraw-icon.png',
+        height: 60,
+        width: 60,
       },
       links: [
         {
@@ -427,14 +440,18 @@ const vscode: DocPage = {
       imgPlaceholder: 'Figma',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/figma.no-invert.svg',
+        height: 45,
+        width: 45,
       },
       links: [
         {
           type: LinkType.Marketplace,
           url: 'https://marketplace.visualstudio.com/items?itemName=figma.figma-vscode-extension',
+        },
+        {
+          type: LinkType.Web,
+          url: 'https://www.figma.com/',
         },
       ],
     },
@@ -442,7 +459,7 @@ const vscode: DocPage = {
       imgPlaceholder: 'Git File History',
       titleCard: '',
       cover: {
-        src: '',
+        src: '/extensions/vscode/git-file-history-icon.png',
         height: 50,
         width: 50,
       },
@@ -457,9 +474,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'Git Graph',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/git-graph.no-invert.svg',
+        height: 60,
+        width: 60,
       },
       links: [
         {
@@ -472,14 +489,18 @@ const vscode: DocPage = {
       imgPlaceholder: 'GitHub Copilot',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/github-copilot.svg',
+        height: 60,
+        width: 60,
       },
       links: [
         {
           type: LinkType.Marketplace,
           url: 'https://marketplace.visualstudio.com/items?itemName=GitHub.copilot',
+        },
+        {
+          type: LinkType.Web,
+          url: 'https://github.com/features/copilot',
         },
       ],
     },
@@ -487,9 +508,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'GitHub Copilot Chat',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/github-copilot.svg',
+        height: 60,
+        width: 60,
       },
       links: [
         {
@@ -502,9 +523,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'AWS Toolkit - Amazon Q, CodeWhisperer, and more',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/aws-icon.png',
+        height: 80,
+        width: 80,
       },
       links: [
         {
@@ -517,14 +538,18 @@ const vscode: DocPage = {
       imgPlaceholder: 'Tabnine',
       titleCard: '',
       cover: {
-        src: '',
+        src: '/extensions/vscode/tabnine.no-invert.svg',
         height: 50,
-        width: 50,
+        width: 150,
       },
       links: [
         {
           type: LinkType.Marketplace,
           url: 'https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode',
+        },
+        {
+          type: LinkType.Web,
+          url: 'https://www.tabnine.com/',
         },
       ],
     },
@@ -532,7 +557,7 @@ const vscode: DocPage = {
       imgPlaceholder: 'Codeium',
       titleCard: '',
       cover: {
-        src: '',
+        src: '/extensions/vscode/codeium-icon.png',
         height: 50,
         width: 50,
       },
@@ -541,13 +566,17 @@ const vscode: DocPage = {
           type: LinkType.Marketplace,
           url: 'https://marketplace.visualstudio.com/items?itemName=Codeium.codeium',
         },
+        {
+          type: LinkType.Web,
+          url: 'https://codeium.dev/',
+        },
       ],
     },
     {
       imgPlaceholder: 'GitHub Actions',
       titleCard: '',
       cover: {
-        src: '',
+        src: '/extensions/vscode/github-actions-icon.png',
         height: 50,
         width: 50,
       },
@@ -562,7 +591,7 @@ const vscode: DocPage = {
       imgPlaceholder: 'GitHub Pull Requests and Issues',
       titleCard: '',
       cover: {
-        src: '',
+        src: '/extensions/vscode/github-pull-requests-icon.png',
         height: 50,
         width: 50,
       },
@@ -577,9 +606,9 @@ const vscode: DocPage = {
       imgPlaceholder: 'Highlight Matching Tag',
       titleCard: '',
       cover: {
-        src: '',
-        height: 50,
-        width: 50,
+        src: '/extensions/vscode/highlight-matching-tag-icon.png',
+        height: 60,
+        width: 60,
       },
       links: [
         {
@@ -592,7 +621,7 @@ const vscode: DocPage = {
       imgPlaceholder: 'Jest Run It',
       titleCard: '',
       cover: {
-        src: '',
+        src: '/extensions/vscode/jest-run-it-icon.png',
         height: 50,
         width: 50,
       },

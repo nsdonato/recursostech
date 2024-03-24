@@ -1,4 +1,4 @@
-import { InfoExtra } from '@/lib/tdx-types'
+import { InfoExtra } from '@/lib/db-types'
 
 import { getConferenceInfo } from './card-utils'
 

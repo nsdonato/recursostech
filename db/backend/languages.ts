@@ -1,4 +1,4 @@
-import { DocPage, LinkType } from '@/lib/tdx-types'
+import { DocPage, LinkType } from '@/lib/db-types'
 
 export const languages: DocPage = {
   title: 'Lenguajes de programación',

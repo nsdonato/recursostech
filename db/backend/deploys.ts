@@ -1,4 +1,4 @@
-import { DocPage, LinkType } from '@/lib/tdx-types'
+import { DocPage, LinkType } from '@/lib/db-types'
 
 export const deploys: DocPage = {
   title: 'Deploys en backend',
@@ -9,6 +9,7 @@ export const deploys: DocPage = {
   contributors: [
     { github_username: 'nsdonato' },
     { github_username: 'jamerrq' },
+    { github_username: 'mariaelisaaraya' },
   ],
   pageItems: [
     {
@@ -16,8 +17,8 @@ export const deploys: DocPage = {
       titleCard: '',
       cover: {
         src: '/backend/deploys/render.png',
-        height: 110,
-        width: 110,
+        height: 80,
+        width: 80,
       },
       links: [
         {
@@ -87,6 +88,22 @@ export const deploys: DocPage = {
         {
           type: LinkType.Web,
           url: 'https://deno.com/deploy',
+        },
+      ],
+      videos: [],
+    },
+    {
+      imgPlaceholder: 'Pythonanywhere',
+      titleCard: '',
+      cover: {
+        src: '/backend/deploys/pa-logo.svg',
+        height: 180,
+        width: 200,
+      },
+      links: [
+        {
+          type: LinkType.Web,
+          url: 'https://www.pythonanywhere.com/',
         },
       ],
       videos: [],

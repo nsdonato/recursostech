@@ -1,10 +1,11 @@
-import { getContributorsFromFile } from 'components/contributors/contributors-utils'
-import { WebLink } from 'components/web-link/web-link'
 import Image from 'next/image'
 
+import { PageContributor } from '@/lib/db-types'
 import { EventNames } from '@/lib/metrics/metrics-types'
-import { PageContributor } from '@/lib/tdx-types'
 import { getContributorsFromGitHub } from '@/services/get-contributors'
+
+import { WebLink } from '../web-link/web-link'
+import { getContributorsFromFile } from './contributors-utils'
 
 type ContributorsProp = {
   contributors?: PageContributor[]

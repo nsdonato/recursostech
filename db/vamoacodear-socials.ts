@@ -1,4 +1,4 @@
-import { LinkType } from '@/lib/tdx-types'
+import { LinkType } from '@/lib/db-types'
 
 export const noeSocialNetworks = [
   {
@@ -7,25 +7,25 @@ export const noeSocialNetworks = [
     cover: {
       width: 40,
       height: 40,
-      src: '/socials/discord.svg',
+      src: '/socials/discord-icon.no-invert.svg',
     },
   },
   {
     type: LinkType.X,
     url: 'https://twitter.com/vamoacodear',
     cover: {
-      width: 30,
-      height: 30,
-      src: '/socials/twitter.svg',
+      width: 35,
+      height: 35,
+      src: '/socials/x-icon.svg',
     },
   },
   {
     type: LinkType.TikTok,
     url: 'https://tiktok.com/@vamoacodear',
     cover: {
-      width: 33,
+      width: 30,
       height: 30,
-      src: '/socials/tiktok.svg',
+      src: '/socials/tiktok-icon.no-invert.svg',
     },
   },
   {
@@ -34,7 +34,25 @@ export const noeSocialNetworks = [
     cover: {
       width: 30,
       height: 30,
-      src: '/socials/instagram.svg',
+      src: '/socials/instagram-icon.no-invert.svg',
+    },
+  },
+  {
+    type: LinkType.YouTube,
+    url: 'https://youtube.com/vamoacodear',
+    cover: {
+      width: 30,
+      height: 30,
+      src: '/socials/youtube.no-invert.svg',
+    },
+  },
+  {
+    type: LinkType.Twitch,
+    url: 'https://www.twitch.tv/vamoacodear',
+    cover: {
+      width: 30,
+      height: 30,
+      src: '/socials/twitch-icon.no-invert.svg',
     },
   },
 ]

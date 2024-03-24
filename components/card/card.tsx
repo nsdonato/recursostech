@@ -1,7 +1,6 @@
-import { Video } from 'components/video/video'
+import { PageItem } from '@/lib/db-types'
 
-import { PageItem } from '@/lib/tdx-types'
-
+import { Video } from '../video/video'
 import { WebLink } from '../web-link/web-link'
 import { CardBody } from './card-body'
 import { CardInformation } from './card-information'

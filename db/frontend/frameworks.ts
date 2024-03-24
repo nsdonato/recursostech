@@ -1,4 +1,4 @@
-import { DocPage, LinkType } from '@/lib/tdx-types'
+import { DocPage, LinkType } from '@/lib/db-types'
 
 const frameworks: DocPage = {
   title: 'Frameworks',
@@ -8,6 +8,7 @@ const frameworks: DocPage = {
   contributors: [
     { github_username: 'nsdonato' },
     { github_username: 'florluzduarte' },
+    { github_username: 'eduWTR' },
   ],
   pageItems: [
     {
@@ -84,6 +85,66 @@ const frameworks: DocPage = {
       links: [{ type: LinkType.Web, url: 'https://qwik.dev/' }],
       cover: {
         src: '/frontend/frameworks/qwik.no-invert.svg',
+        height: 90,
+        width: 90,
+      },
+      videos: [],
+    },
+    {
+      imgPlaceholder: 'Blazor',
+      titleCard: 'Framework del equipo de Microsoft ASP.NET',
+      links: [
+        {
+          type: LinkType.Web,
+          url: 'https://dotnet.microsoft.com/es-es/apps/aspnet/web-apps/blazor',
+        },
+      ],
+      cover: {
+        src: '/frontend/frameworks/blazor.no-invert.svg',
+        height: 90,
+        width: 90,
+      },
+      videos: [],
+    },
+    {
+      imgPlaceholder: 'Preact (librería)',
+      titleCard: 'La versión peque de React.',
+      links: [{ type: LinkType.Web, url: 'https://preactjs.com/' }],
+      cover: {
+        src: '/frontend/frameworks/preact.no-invert.svg',
+        height: 90,
+        width: 90,
+      },
+      videos: [],
+    },
+    {
+      imgPlaceholder: 'SolidJS (librería)',
+      titleCard: 'Librería JS declarativa para crear IUs.',
+      links: [{ type: LinkType.Web, url: 'https://www.solidjs.com/' }],
+      cover: {
+        src: '/frontend/frameworks/solidjs.no-invert.svg',
+        height: 90,
+        width: 90,
+      },
+      videos: [],
+    },
+    {
+      imgPlaceholder: 'Lit (librería)',
+      titleCard: 'Librería de web componentes. Rápidos y livianos.',
+      links: [{ type: LinkType.Web, url: 'https://lit.dev/' }],
+      cover: {
+        src: '/frontend/frameworks/lit.no-invert.svg',
+        height: 90,
+        width: 140,
+      },
+      videos: [],
+    },
+    {
+      imgPlaceholder: 'Ember JS',
+      titleCard: 'Framework para desarrolladores web ambiciosos',
+      links: [{ type: LinkType.Web, url: 'https://emberjs.com/' }],
+      cover: {
+        src: '/frontend/frameworks/ember.no-invert.svg',
         height: 90,
         width: 90,
       },

@@ -11,7 +11,7 @@ type SidebarDetailProps = {
 
 export const SidebarDetails = ({ name, children }: SidebarDetailProps) => {
   const pathname = usePathname()
-
+  console.log(pathname)
   return (
     <details>
       <summary

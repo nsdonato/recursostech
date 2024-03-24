@@ -1,4 +1,4 @@
-import { DocPage, LinkType } from '@/lib/tdx-types'
+import { DocPage, LinkType } from '@/lib/db-types'
 
 const streamers: DocPage = {
   title: 'Streamers',
@@ -23,7 +23,7 @@ const streamers: DocPage = {
       cover: {
         src: '/streamers/vamoacodear.png',
         height: 80,
-        width: 90,
+        width: 80,
       },
       videos: [],
     },
@@ -36,7 +36,7 @@ const streamers: DocPage = {
       cover: {
         src: '/streamers/mermeladatech.png',
         height: 80,
-        width: 90,
+        width: 80,
       },
       videos: [],
     },
@@ -49,20 +49,7 @@ const streamers: DocPage = {
       cover: {
         src: '/streamers/afor_digital.png',
         height: 80,
-        width: 90,
-      },
-      videos: [],
-    },
-    {
-      imgPlaceholder: 'Rothio Tome',
-      titleCard: 'Videojuegos con Godot, Unity, GDScript, C# y más',
-      links: [
-        { type: LinkType.Twitch, url: 'https://www.twitch.tv/rothiotome' },
-      ],
-      cover: {
-        src: '/streamers/rothiotome.png',
-        height: 80,
-        width: 90,
+        width: 80,
       },
       videos: [],
     },
@@ -73,7 +60,7 @@ const streamers: DocPage = {
       cover: {
         src: '/streamers/altaskur.png',
         height: 80,
-        width: 90,
+        width: 80,
       },
       videos: [],
     },
@@ -84,7 +71,7 @@ const streamers: DocPage = {
       cover: {
         src: '/streamers/midudev.png',
         height: 80,
-        width: 90,
+        width: 80,
       },
       videos: [],
     },
@@ -97,7 +84,7 @@ const streamers: DocPage = {
       cover: {
         src: '/streamers/goncypozzo.png',
         height: 80,
-        width: 90,
+        width: 80,
       },
       videos: [],
     },
@@ -110,7 +97,7 @@ const streamers: DocPage = {
       cover: {
         src: '/streamers/ikurotime.png',
         height: 80,
-        width: 90,
+        width: 80,
       },
       videos: [],
     },
@@ -121,7 +108,7 @@ const streamers: DocPage = {
       cover: {
         src: '/streamers/manzdev.png',
         height: 80,
-        width: 90,
+        width: 80,
       },
       videos: [],
     },
@@ -134,7 +121,7 @@ const streamers: DocPage = {
       cover: {
         src: '/streamers/carlosazaustre.png',
         height: 80,
-        width: 90,
+        width: 80,
       },
       videos: [],
     },

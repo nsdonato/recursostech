@@ -1,5 +1,4 @@
-import { menu } from 'db/menu'
-
+import { menu } from '../../db/menu'
 import { SidebarDetails } from './sidebar-details'
 import LinkWrapper from './sidebar-selected'
 

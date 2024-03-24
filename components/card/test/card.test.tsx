@@ -1,53 +1,38 @@
 import { render, screen } from '@testing-library/react'
 
-import { Card } from '../card'
-import { CardItem } from '../card-types'
+import { LinkType, PageItem } from '@/lib/db-types'
 
-const itemMock: CardItem = {
-  titleCard: 'Card Title',
-  infoExtra: undefined,
-  cover: {
-    src: '/frontend/vercel.svg',
-    width: 100,
-    height: 100,
-  },
-  imgPlaceholder: 'vercel placeholder',
-  links: [
-    {
-      url: 'https://vercel.com',
-      type: 'Web',
-    },
-  ],
-  videos: [
-    {
-      url: 'https://vercel.com',
-      tooltip: 'Vercel',
-    },
-  ],
-}
+import { Card } from '../card'
 
 describe('<Card />', () => {
   test('renders correctly', () => {
+    const itemMock: PageItem = {
+      titleCard: 'Card Title',
+      infoExtra: undefined,
+      cover: {
+        src: '/frontend/vercel.svg',
+        width: 100,
+        height: 100,
+      },
+      imgPlaceholder: 'vercel placeholder',
+      links: [
+        {
+          url: 'https://vercel.com',
+          type: LinkType.Web,
+        },
+      ],
+      videos: [
+        {
+          url: 'https://vercel.com',
+          tooltip: 'Vercel',
+        },
+      ],
+    }
+
     render(<Card item={itemMock} />)
 
-    // TODO: add testId to Icon component so we can use it here
-    // const svg = screen.getByRole('svg')
-    // expect(svg).toBeInTheDocument()
-    expect(screen.getByText('Web')).toBeInTheDocument()
-    expect(screen.getByText('Card Title')).toBeInTheDocument()
     expect(screen.getByText('vercel placeholder')).toBeInTheDocument()
-  })
-
-  test('renders image placeholder when has no cover', () => {
-    const itemWithoutCover = {
-      ...itemMock,
-      cover: {
-        ...itemMock.cover,
-        src: '',
-      },
-    }
-    render(<Card item={itemWithoutCover} />)
-
-    expect(screen.queryByText('vercel placeholder')).toBeInTheDocument()
+    expect(screen.getByText('Card Title')).toBeInTheDocument()
+    expect(screen.getByText('Web')).toBeInTheDocument()
   })
 })

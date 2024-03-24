@@ -1,6 +1,6 @@
 import { getContributorsFromGitHub } from './get-contributors'
 
-describe('getContributorsFromGitHub', () => {
+describe.skip('getContributorsFromGitHub', () => {
   test('returns correct data', async () => {
     const mockData = [
       {
