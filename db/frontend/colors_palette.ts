@@ -11,8 +11,8 @@ const colors_palette: DocPage = {
     { github_username: 'ddragondev' },
     { github_username: 'IvanMJs' },
     { github_username: 'mariaelisaaraya' },
-    { github_username: 'eduWTR' },
     { github_username: 'mig-code' },
+    { github_username: 'eduWTR' },
   ],
   pageItems: [
     {
@@ -94,6 +94,17 @@ const colors_palette: DocPage = {
         src: '/frontend/coolors.no-invert.svg',
         height: 80,
         width: 190,
+      },
+      videos: [],
+    },
+    {
+      imgPlaceholder: 'Paletton',
+      titleCard: 'Crea combinaciones de colores fácil',
+      links: [{ type: LinkType.Web, url: 'https://paletton.com/' }],
+      cover: {
+        src: '/frontend/paletton.png',
+        height: 80,
+        width: 80,
       },
       videos: [],
     },
