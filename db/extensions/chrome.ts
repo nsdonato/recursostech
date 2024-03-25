@@ -5,16 +5,19 @@ const chrome: DocPage = {
   description: [
     'Extensiones para que tu día a día con Google Chrome, sea más productivo.',
   ],
-  contributors: [{ github_username: 'nsdonato' }],
+  contributors: [
+    { github_username: 'nsdonato' },
+    { github_username: 'eduWTR' },
+  ],
   pageItems: [
     {
       imgPlaceholder: 'Dark Reader',
       titleCard: 'Modo oscuro para cualquier página web',
       links: [{ type: LinkType.Web, url: 'https://darkreader.org/' }],
       cover: {
-        src: '',
-        height: 80,
-        width: 80,
+        src: '/extensions/chrome/darkreader-logo.png',
+        height: 60,
+        width: 60,
       },
       videos: [],
     },
@@ -29,9 +32,9 @@ const chrome: DocPage = {
         },
       ],
       cover: {
-        src: '',
-        height: 80,
-        width: 80,
+        src: '/extensions/chrome/grammarly.no-invert.svg',
+        height: 90,
+        width: 160,
       },
       videos: [],
     },
@@ -45,9 +48,9 @@ const chrome: DocPage = {
         },
       ],
       cover: {
-        src: '',
-        height: 80,
-        width: 80,
+        src: '/extensions/chrome/json-viewer-pro-logo.png',
+        height: 70,
+        width: 70,
       },
       videos: [],
     },
@@ -61,9 +64,29 @@ const chrome: DocPage = {
         },
       ],
       cover: {
-        src: '',
-        height: 80,
-        width: 80,
+        src: '/extensions/chrome/react-developer-tools-logo.png',
+        height: 60,
+        width: 60,
+      },
+      videos: [],
+    },
+    {
+      imgPlaceholder: 'Wappalyzer',
+      titleCard: 'Tool favorita de los bisagritas tech',
+      links: [
+        {
+          type: LinkType.Web,
+          url: 'https://www.wappalyzer.com/',
+        },
+        {
+          type: LinkType.Store,
+          url: 'https://chromewebstore.google.com/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg',
+        },
+      ],
+      cover: {
+        src: '/extensions/chrome/wappalyzer-logo.png',
+        height: 70,
+        width: 70,
       },
       videos: [],
     },
