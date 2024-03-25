@@ -11,13 +11,13 @@ type SidebarDetailProps = {
 
 export const SidebarDetails = ({ name, children }: SidebarDetailProps) => {
   const pathname = usePathname()
+  const actualPath = pathname.split('/')[1]
+
   return (
     <details>
       <summary
         className={cn({
-          'selected-menu':
-            name.toLowerCase().includes(pathname.split('/')[2]) ||
-            pathname === '/',
+          'selected-menu': actualPath === name.toLowerCase(),
         })}>
         {name}
       </summary>
