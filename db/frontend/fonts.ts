@@ -9,6 +9,7 @@ const fonts: DocPage = {
     { github_username: 'nsdonato' },
     { github_username: 'maadeval' },
     { github_username: 'glaboryp' },
+    { github_username: 'eduWTR' },
   ],
   pageItems: [
     {
