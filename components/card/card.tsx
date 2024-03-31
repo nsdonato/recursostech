@@ -1,4 +1,5 @@
 import { PageItem } from '@/lib/db-types'
+import { getFormattedIdentifier } from '@/lib/utils'
 
 import { Video } from '../video/video'
 import { WebLink } from '../web-link/web-link'
@@ -15,11 +16,13 @@ export const Card = ({ item }: CardProps) => {
   return (
     <div
       className='card p-4 ring-1 bg-base-100 shadow-lg h-auto hover:scale-105 transition-transform'
-      id={imgPlaceholder}>
+      id={getFormattedIdentifier(imgPlaceholder)}>
       <CardBody cover={cover} imgPlaceholder={imgPlaceholder} />
       <>
         <p className='py-1 truncate'>
-          <a className='pointer-events-none' href={`#${imgPlaceholder}`}>
+          <a
+            className='pointer-events-none'
+            href={`#${getFormattedIdentifier(imgPlaceholder)}`}>
             {imgPlaceholder}
           </a>
         </p>
