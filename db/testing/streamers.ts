@@ -35,6 +35,34 @@ const streamers: DocPage = {
       },
       videos: [],
     },
+    {
+      imgPlaceholder: 'Coding is caring',
+      titleCard: 'Testing, Cypress, etc.',
+      links: [
+        {
+          type: LinkType.X,
+          url: 'https://twitter.com/codingiscaring',
+        },
+        {
+          type: LinkType.Twitch,
+          url: 'https://www.twitch.tv/codingiscaring',
+        },
+        {
+          type: LinkType.Web,
+          url: 'https://mariasoria.dev/',
+        },
+        {
+          type: LinkType.Web,
+          url: 'https://yodralopez.dev/',
+        },
+      ],
+      cover: {
+        src: '/streamers/codingiscaring.png',
+        height: 80,
+        width: 90,
+      },
+      videos: [],
+    },
   ],
 }
 

@@ -16,7 +16,9 @@ export const Card = ({ item }: CardProps) => {
     <div className='card p-4 ring-1 bg-base-100 shadow-lg h-auto hover:scale-105 transition-transform'>
       <CardBody cover={cover} imgPlaceholder={imgPlaceholder} />
       <>
-        <p className='py-1 truncate'>{imgPlaceholder}</p>
+        <p id={imgPlaceholder} className='py-1 truncate'>
+          {imgPlaceholder}{' '}
+        </p>
         <div className='divider m-0 p-0'></div>
         <CardInformation title={titleCard} infoExtra={infoExtra} />
         <div className='flex flex-wrap gap-2 pt-1'>
