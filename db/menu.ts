@@ -82,6 +82,10 @@ const data: Menu[] = [
         name: 'Aprender',
         url: '/backend/learn',
       },
+      {
+        name: 'Herramientas',
+        url: '/backend/tools',
+      },
     ],
   },
   {
