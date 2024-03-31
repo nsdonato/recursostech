@@ -6,7 +6,7 @@ const spain: DocPage = {
   contributors: [{ github_username: 'nsdonato' }],
   pageItems: [
     {
-      name: 'Bilbo Stack',
+      imgPlaceholder: 'Bilbo Stack',
       titleCard: '',
       links: [{ type: LinkType.Web, url: 'https://bilbostack.com/' }],
       cover: {
@@ -25,7 +25,7 @@ const spain: DocPage = {
       },
     },
     {
-      name: 'T3chfest',
+      imgPlaceholder: 'T3chfest',
       titleCard: '',
       links: [{ type: LinkType.Web, url: 'https://t3chfest.es/2024/' }],
       cover: {
@@ -44,7 +44,7 @@ const spain: DocPage = {
       },
     },
     {
-      name: 'Commit Conf',
+      imgPlaceholder: 'Commit Conf',
       titleCard: '',
       links: [{ type: LinkType.Web, url: 'https://commit-conf.com/' }],
       cover: {
@@ -63,7 +63,7 @@ const spain: DocPage = {
       },
     },
     {
-      name: 'Pulpo Conf',
+      imgPlaceholder: 'Pulpo Conf',
       titleCard: '',
       links: [{ type: LinkType.Web, url: 'https://pulpocon.es/' }],
       cover: {
@@ -82,7 +82,7 @@ const spain: DocPage = {
       },
     },
     {
-      name: 'Salmorejo Tech',
+      imgPlaceholder: 'Salmorejo Tech',
       titleCard: '',
       links: [{ type: LinkType.Web, url: 'https://salmorejo.tech/2024/' }],
       cover: {
@@ -101,7 +101,7 @@ const spain: DocPage = {
       },
     },
     {
-      name: 'Software Crafters Barcelona',
+      imgPlaceholder: 'Software Crafters Barcelona',
       titleCard: '',
       links: [
         { type: LinkType.Web, url: 'https://softwarecrafters.barcelona/' },
@@ -122,7 +122,7 @@ const spain: DocPage = {
       },
     },
     {
-      name: 'Barcelona Developers Conference',
+      imgPlaceholder: 'Barcelona Developers Conference',
       titleCard: '',
       links: [{ type: LinkType.Web, url: 'https://www.devbcn.com/' }],
       cover: {
@@ -141,7 +141,7 @@ const spain: DocPage = {
       },
     },
     {
-      name: 'Pamplona Software Crafters',
+      imgPlaceholder: 'Pamplona Software Crafters',
       titleCard: '',
       links: [{ type: LinkType.Web, url: 'https://pamplonaswcraft.com/' }],
       cover: {

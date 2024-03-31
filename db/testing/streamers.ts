@@ -12,7 +12,7 @@ const streamers: DocPage = {
   ],
   pageItems: [
     {
-      name: 'Charly Automatiza',
+      imgPlaceholder: 'Charly Automatiza',
       titleCard: 'Cypress, Playwright, etc.',
       links: [
         {
@@ -36,7 +36,7 @@ const streamers: DocPage = {
       videos: [],
     },
     {
-      name: 'Coding is caring',
+      imgPlaceholder: 'Coding is caring',
       titleCard: 'Testing, Cypress, etc.',
       links: [
         {
