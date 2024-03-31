@@ -1,7 +1,7 @@
 import { DocPage, LinkType } from '@/lib/db-types'
 
 const chrome: DocPage = {
-  title: 'Extensions',
+  title: 'Extensiones',
   description: [
     'Extensiones para que tu día a día con Google Chrome, sea más productivo.',
   ],
