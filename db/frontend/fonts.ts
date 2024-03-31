@@ -55,6 +55,28 @@ const fonts: DocPage = {
       },
       videos: [],
     },
+    {
+      imgPlaceholder: 'Fontspace',
+      titleCard: '',
+      links: [{ type: LinkType.Web, url: 'https://www.fontspace.com/' }],
+      cover: {
+        src: '/frontend/fonts/fontspace.no-invert.svg',
+        height: 90,
+        width: 160,
+      },
+      videos: [],
+    },
+    {
+      imgPlaceholder: '1001 Fonts',
+      titleCard: '',
+      links: [{ type: LinkType.Web, url: 'https://www.1001fonts.com/' }],
+      cover: {
+        src: '/frontend/fonts/1001fonts.no-invert.svg',
+        height: 80,
+        width: 160,
+      },
+      videos: [],
+    },
   ],
 }
 
