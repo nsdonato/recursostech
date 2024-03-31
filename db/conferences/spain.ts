@@ -6,13 +6,13 @@ const spain: DocPage = {
   contributors: [{ github_username: 'nsdonato' }],
   pageItems: [
     {
-      imgPlaceholder: 'Bilbo Stack',
+      name: 'Bilbo Stack',
       titleCard: '',
       links: [{ type: LinkType.Web, url: 'https://bilbostack.com/' }],
       cover: {
         src: '/conferences/espana/bilbostack.png',
-        height: 80,
-        width: 190,
+        height: 60,
+        width: 230,
       },
       videos: [],
       infoExtra: {
@@ -25,7 +25,7 @@ const spain: DocPage = {
       },
     },
     {
-      imgPlaceholder: 'T3chfest',
+      name: 'T3chfest',
       titleCard: '',
       links: [{ type: LinkType.Web, url: 'https://t3chfest.es/2024/' }],
       cover: {
@@ -44,13 +44,13 @@ const spain: DocPage = {
       },
     },
     {
-      imgPlaceholder: 'Commit Conf',
+      name: 'Commit Conf',
       titleCard: '',
       links: [{ type: LinkType.Web, url: 'https://commit-conf.com/' }],
       cover: {
         src: '/conferences/espana/commitconf.no-invert.svg',
-        height: 80,
-        width: 190,
+        height: 50,
+        width: 220,
       },
       videos: [],
       infoExtra: {
@@ -63,7 +63,7 @@ const spain: DocPage = {
       },
     },
     {
-      imgPlaceholder: 'Pulpo Conf',
+      name: 'Pulpo Conf',
       titleCard: '',
       links: [{ type: LinkType.Web, url: 'https://pulpocon.es/' }],
       cover: {
@@ -78,6 +78,84 @@ const spain: DocPage = {
         date: {
           month: 'Septiembre',
           days: ['07', '08', '09'],
+        },
+      },
+    },
+    {
+      name: 'Salmorejo Tech',
+      titleCard: '',
+      links: [{ type: LinkType.Web, url: 'https://salmorejo.tech/2024/' }],
+      cover: {
+        src: '/conferences/espana/salmorejotech.svg',
+        height: 80,
+        width: 190,
+      },
+      videos: [],
+      infoExtra: {
+        country: '🇪🇸',
+        city: 'Córdoba',
+        date: {
+          month: 'Abril',
+          days: ['24'],
+        },
+      },
+    },
+    {
+      name: 'Software Crafters Barcelona',
+      titleCard: '',
+      links: [
+        { type: LinkType.Web, url: 'https://softwarecrafters.barcelona/' },
+      ],
+      cover: {
+        src: '',
+        height: 80,
+        width: 190,
+      },
+      videos: [],
+      infoExtra: {
+        country: '🇪🇸',
+        city: 'Barcelona',
+        date: {
+          month: 'Octubre',
+          days: ['20', '21', '22'],
+        },
+      },
+    },
+    {
+      name: 'Barcelona Developers Conference',
+      titleCard: '',
+      links: [{ type: LinkType.Web, url: 'https://www.devbcn.com/' }],
+      cover: {
+        src: '/conferences/espana/scbcn.png',
+        height: 60,
+        width: 60,
+      },
+      videos: [],
+      infoExtra: {
+        country: '🇪🇸',
+        city: 'Barcelona',
+        date: {
+          month: 'Julio',
+          days: ['13', '14'],
+        },
+      },
+    },
+    {
+      name: 'Pamplona Software Crafters',
+      titleCard: '',
+      links: [{ type: LinkType.Web, url: 'https://pamplonaswcraft.com/' }],
+      cover: {
+        src: '',
+        height: 80,
+        width: 190,
+      },
+      videos: [],
+      infoExtra: {
+        country: '🇪🇸',
+        city: 'Pamplona',
+        date: {
+          month: 'Mayo',
+          days: ['17', '18'],
         },
       },
     },

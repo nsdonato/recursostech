@@ -12,7 +12,7 @@ const streamers: DocPage = {
   ],
   pageItems: [
     {
-      imgPlaceholder: 'Charly Automatiza',
+      name: 'Charly Automatiza',
       titleCard: 'Cypress, Playwright, etc.',
       links: [
         {
@@ -30,6 +30,34 @@ const streamers: DocPage = {
       ],
       cover: {
         src: '/streamers/charlyautomatiza.png',
+        height: 80,
+        width: 90,
+      },
+      videos: [],
+    },
+    {
+      name: 'Coding is caring',
+      titleCard: 'Testing, Cypress, etc.',
+      links: [
+        {
+          type: LinkType.X,
+          url: 'https://twitter.com/codingiscaring',
+        },
+        {
+          type: LinkType.Twitch,
+          url: 'https://www.twitch.tv/codingiscaring',
+        },
+        {
+          type: LinkType.Web,
+          url: 'https://mariasoria.dev/',
+        },
+        {
+          type: LinkType.Web,
+          url: 'https://yodralopez.dev/',
+        },
+      ],
+      cover: {
+        src: '/streamers/codingiscaring.png',
         height: 80,
         width: 90,
       },
