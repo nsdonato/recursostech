@@ -9,6 +9,7 @@ export default async function Home() {
   return (
     <>
       <Header
+        href='Inicio'
         title='Inicio'
         description={['En Internet siempre veo las mismas preguntas:']}
       />
