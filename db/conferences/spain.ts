@@ -107,9 +107,9 @@ const spain: DocPage = {
         { type: LinkType.Web, url: 'https://softwarecrafters.barcelona/' },
       ],
       cover: {
-        src: '',
-        height: 80,
-        width: 190,
+        src: '/conferences/espana/scbcn.png',
+        height: 60,
+        width: 60,
       },
       videos: [],
       infoExtra: {
@@ -126,9 +126,9 @@ const spain: DocPage = {
       titleCard: '',
       links: [{ type: LinkType.Web, url: 'https://www.devbcn.com/' }],
       cover: {
-        src: '/conferences/espana/scbcn.png',
+        src: '/conferences/espana/dev-bcn.png',
         height: 60,
-        width: 60,
+        width: 160,
       },
       videos: [],
       infoExtra: {
@@ -145,9 +145,9 @@ const spain: DocPage = {
       titleCard: '',
       links: [{ type: LinkType.Web, url: 'https://pamplonaswcraft.com/' }],
       cover: {
-        src: '',
+        src: '/conferences/espana/pamplonaswcraft.jpg',
         height: 80,
-        width: 190,
+        width: 80,
       },
       videos: [],
       infoExtra: {
