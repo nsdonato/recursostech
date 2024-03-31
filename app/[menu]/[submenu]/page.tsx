@@ -17,7 +17,11 @@ export default async function SubmenuPage({ params }: SubmenuPageProps) {
 
   return (
     <>
-      <Header title={data.title} description={data.description} />
+      <Header
+        href={data.title}
+        title={data.title}
+        description={data.description}
+      />
       <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-8'>
         {data.pageItems.map(item => (
           <Card key={item.imgPlaceholder} item={item} />

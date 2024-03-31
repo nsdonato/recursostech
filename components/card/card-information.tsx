@@ -5,10 +5,13 @@ import { getConferenceInfo } from './utils/card-utils'
 type CardTitleProps = {
   title?: string
   infoExtra?: InfoExtra
+  href: string
 }
 
-export const CardInformation = ({ title, infoExtra }: CardTitleProps) => (
+export const CardInformation = ({ title, infoExtra, href }: CardTitleProps) => (
   <p className='py-1 truncate text-sm'>
-    {infoExtra ? getConferenceInfo(infoExtra) : title}
+    <a className='pointer-events-none' href={`#${href}`}>
+      {infoExtra ? getConferenceInfo(infoExtra) : title}
+    </a>
   </p>
 )
