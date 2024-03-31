@@ -8,6 +8,7 @@ const tools: DocPage = {
   contributors: [
     { github_username: 'nsdonato' },
     { github_username: 'ivanlolivier' },
+    { github_username: 'eduWTR' },
   ],
   pageItems: [
     {
@@ -63,6 +64,17 @@ const tools: DocPage = {
         src: '/frontend/tools/css-layout-generator.svg',
         height: 80,
         width: 100,
+      },
+      videos: [],
+    },
+    {
+      imgPlaceholder: 'Clippy',
+      titleCard: 'Genera súper fácil clip-path CSS.',
+      links: [{ type: LinkType.Web, url: 'https://bennettfeely.com/clippy/' }],
+      cover: {
+        src: '/frontend/tools/clippy.png',
+        height: 60,
+        width: 60,
       },
       videos: [],
     },
