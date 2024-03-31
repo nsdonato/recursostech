@@ -15,6 +15,22 @@ module.exports = {
         protocol: 'https',
         hostname: 'avatars.githubusercontent.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'i.ytimg.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'lenguajehtml.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'lenguajecss.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'lenguajejs.com',
+      },
     ],
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',

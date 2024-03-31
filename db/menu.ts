@@ -1,8 +1,6 @@
 import { Menu } from '@/lib/menu-types'
 
-import { Video } from './../lib/db-types'
-
-export const menu: Menu[] = [
+const data: Menu[] = [
   {
     name: 'Frontend',
     items: [
@@ -59,6 +57,10 @@ export const menu: Menu[] = [
         name: 'Streamers',
         url: '/frontend/streamers',
       },
+      {
+        name: 'Aprender',
+        url: '/frontend/learn',
+      },
     ],
   },
   {
@@ -75,6 +77,10 @@ export const menu: Menu[] = [
       {
         name: 'Lenguajes',
         url: '/backend/languages',
+      },
+      {
+        name: 'Aprender',
+        url: '/backend/learn',
       },
     ],
   },
@@ -153,3 +159,10 @@ export const menu: Menu[] = [
     ],
   },
 ]
+
+const menuSorted = data.map(menu => ({
+  name: menu.name,
+  items: menu.items.sort((a, b) => a.name.localeCompare(b.name)),
+}))
+
+export const menu = menuSorted
