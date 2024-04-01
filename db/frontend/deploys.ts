@@ -3,9 +3,9 @@ import { DocPage, LinkType } from '@/lib/db-types'
 const deploys: DocPage = {
   title: 'Deploys en frontend',
   description: [
-    '¿Como hacemos que otra persona pueda ver nuestra web por internet? <br />',
-    '¿Que herramientas nos permiten publicarla, configurarla, entre otras necesidades? <br />',
-    'Tu elección va a depender de las necesidades del proyecto y las preferencias del equipo de desarrollo. <br />',
+    '¿Como hacemos que otra persona pueda ver nuestra web por internet?',
+    '¿Que herramientas nos permiten publicarla, configurarla, entre otras necesidades?',
+    'Tu elección va a depender de las necesidades del proyecto y las preferencias del equipo de desarrollo.',
     'Algunas de las herramientas más populares son:',
   ],
   contributors: [

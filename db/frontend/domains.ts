@@ -2,7 +2,7 @@ import { DocPage, LinkType } from '@/lib/db-types'
 
 const domains: DocPage = {
   title: 'Dominios',
-  description: ['Donde comprar tu dominio para tu proyecto'],
+  description: ['Donde comprar tu dominio para tu proyecto.'],
   contributors: [
     { github_username: 'nsdonato' },
     { github_username: 'guguponce' },
