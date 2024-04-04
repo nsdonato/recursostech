@@ -31,7 +31,7 @@ const streamers: DocPage = {
       cover: {
         src: '/streamers/charlyautomatiza.png',
         height: 80,
-        width: 90,
+        width: 80,
       },
       videos: [],
     },
