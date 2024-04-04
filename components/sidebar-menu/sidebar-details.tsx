@@ -17,7 +17,7 @@ export const SidebarDetails = ({ name, children }: SidebarDetailProps) => {
     <details>
       <summary
         className={cn({
-          'selected-menu': actualPath === name.toLowerCase(),
+          'selected-menu': actualPath.includes(name.toLowerCase().slice(0, 5)),
         })}>
         {name}
       </summary>
