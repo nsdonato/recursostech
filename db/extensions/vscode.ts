@@ -346,7 +346,7 @@ const vscode: DocPage = {
       titleCard: '',
       cover: {
         src: '/extensions/vscode/colorize.no-invert.svg',
-        height: 50,
+        height: 90,
         width: 150,
       },
       links: [
@@ -411,8 +411,8 @@ const vscode: DocPage = {
       titleCard: '',
       cover: {
         src: '/extensions/vscode/es7-react-js-icon.png',
-        height: 70,
-        width: 70,
+        height: 80,
+        width: 120,
       },
       links: [
         {

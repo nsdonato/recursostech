@@ -1,3 +1,7 @@
+'use client'
+
+import { useEffect } from 'react'
+
 import { PageItem } from '@/lib/db-types'
 import { getFormattedIdentifier } from '@/lib/utils'
 
@@ -12,6 +16,21 @@ type CardProps = {
 
 export const Card = ({ item }: CardProps) => {
   const { cover, imgPlaceholder, titleCard, infoExtra, links, videos } = item
+
+  useEffect(() => {
+    const highlightedCard =
+      window.location.hash === `#${getFormattedIdentifier(item.imgPlaceholder)}`
+
+    if (highlightedCard) {
+      const card = document.getElementById(
+        getFormattedIdentifier(item.imgPlaceholder)
+      )
+      card?.classList.add('ring-accent')
+      setTimeout(() => {
+        card?.classList.remove('ring-accent')
+      }, 2000)
+    }
+  }, [item.imgPlaceholder])
 
   return (
     <div

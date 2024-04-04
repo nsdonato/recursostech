@@ -2,7 +2,7 @@ import { DocPage, LinkType } from '@/lib/db-types'
 
 const tools: DocPage = {
   title: 'Testing',
-  description: ['Frameworks o herramientas para testing'],
+  description: ['Frameworks o herramientas para testing.'],
   contributors: [
     {
       github_username: 'nsdonato',

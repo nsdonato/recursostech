@@ -3,7 +3,8 @@ import { DocPage, LinkType } from '@/lib/db-types'
 const fonts: DocPage = {
   title: 'Fuentes',
   description: [
-    'Encontrá la tipografía que más se adapte a tu proyecto! <br /> En alguna de las herramientas también podés encontrar combinaciones de fuentes que funcionan bien juntas.',
+    'Encontrá la tipografía que más se adapte a tu proyecto!',
+    'En alguna de las herramientas también podés encontrar combinaciones de fuentes que funcionan bien juntas.',
   ],
   contributors: [
     { github_username: 'nsdonato' },
