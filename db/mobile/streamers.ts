@@ -23,7 +23,7 @@ const streamers: DocPage = {
       cover: {
         src: '/streamers/neryad.png',
         height: 80,
-        width: 90,
+        width: 80,
       },
       videos: [],
     },
@@ -45,7 +45,7 @@ const streamers: DocPage = {
       cover: {
         src: '/streamers/vadim-headshot.webp',
         height: 80,
-        width: 90,
+        width: 80,
       },
       videos: [],
     },
@@ -63,7 +63,7 @@ const streamers: DocPage = {
       cover: {
         src: '/streamers/moure.png',
         height: 80,
-        width: 90,
+        width: 80,
       },
       videos: [],
     },

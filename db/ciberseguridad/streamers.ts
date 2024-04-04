@@ -22,7 +22,7 @@ export const streamers: DocPage = {
       cover: {
         src: '/streamers/hack4u.jpg',
         height: 80,
-        width: 90,
+        width: 80,
       },
       videos: [],
     },
@@ -37,7 +37,7 @@ export const streamers: DocPage = {
       cover: {
         src: '/streamers/securiters.png',
         height: 80,
-        width: 90,
+        width: 80,
       },
       videos: [],
     },
