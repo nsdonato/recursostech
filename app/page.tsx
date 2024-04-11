@@ -52,7 +52,7 @@ export default async function Home() {
         dudes en comentarlo! ☺️
       </p>
       Noe.-
-      <div className='flex gap-2 mt-4 items-center mb-4'>
+      <div className='flex justify-evenly max-w-sm gap-2 mt-4 items-center mb-6 md:max-w-56'>
         {noeSocialNetworks.map(({ type, url, cover }) => (
           <WebLink
             key={type}
