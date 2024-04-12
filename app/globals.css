@@ -83,3 +83,7 @@ svg {
   width: 24px;
   height: 24px;
 }
+
+.DocSearch-Button {
+  margin: 0px !important;
+}

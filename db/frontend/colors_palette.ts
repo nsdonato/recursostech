@@ -32,19 +32,19 @@ const colors_palette: DocPage = {
       links: [{ type: LinkType.Web, url: 'https://www.tints.dev/' }],
       cover: {
         src: '/frontend/tints.svg',
-        height: 80,
+        height: 100,
         width: 190,
       },
       videos: [],
     },
     {
       imgPlaceholder: 'UI Colors',
-      titleCard: '',
+      titleCard: 'Tailwind CSS Generador de colores',
       links: [{ type: LinkType.Web, url: 'https://uicolors.app/' }],
       cover: {
         src: '/frontend/uicolors.svg',
         height: 80,
-        width: 190,
+        width: 160,
       },
       videos: [],
     },
@@ -53,7 +53,7 @@ const colors_palette: DocPage = {
       titleCard: '',
       links: [{ type: LinkType.Web, url: 'https://coolcontrast.vercel.app/' }],
       cover: {
-        src: '/frontend/coolcontrast.svg',
+        src: '/frontend/coolcontrast.no-invert.svg',
         height: 80,
         width: 130,
       },
@@ -61,12 +61,12 @@ const colors_palette: DocPage = {
     },
     {
       imgPlaceholder: 'ColorSpace',
-      titleCard: '',
+      titleCard: 'Generador de paleta de colores',
       links: [{ type: LinkType.Web, url: 'https://mycolor.space/' }],
       cover: {
         src: '/frontend/colorspace.svg',
         height: 80,
-        width: 170,
+        width: 110,
       },
       videos: [],
     },
@@ -82,7 +82,7 @@ const colors_palette: DocPage = {
       cover: {
         src: '/frontend/adobe-color.svg',
         height: 100,
-        width: 120,
+        width: 80,
       },
       videos: [],
     },

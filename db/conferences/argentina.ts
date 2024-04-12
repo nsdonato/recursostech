@@ -2,7 +2,7 @@ import { DocPage, LinkType } from '@/lib/db-types'
 
 const argentina: DocPage = {
   title: 'Conferencias',
-  description: ['Conferencias de programación de todo el mundo!'],
+  description: ['Conferencias de programación en Argentina'],
   contributors: [{ github_username: 'nsdonato' }],
   pageItems: [
     {

@@ -11,18 +11,34 @@ export default async function Home() {
       <Header
         href='Inicio'
         title='Inicio'
-        description={['En Internet siempre veo las mismas preguntas:']}
+        description={['🌎 En Internet siempre veo las mismas preguntas:']}
       />
       <ul className='list-disc list-inside my-6'>
-        <li>¿Tenes algún recurso de iconos?</li>
+        <li>¿Hay streamers de programación?</li>
         <li>¿Donde puedo deployar mi web?</li>
-        <li>¿Cómo configuro [inserte aquí extensión, herramienta, etc]?</li>
+        <li>¿Cómo configuro [extensión, herramienta, etc]?</li>
       </ul>
-      <p>
-        💡 Crees que debería haber un recurso y no esta? Hace un PR y agregalo!
+      <p className='mb-8'>
+        💡 La idea de Recursos Tech es que encuentres todos los recursos en un
+        solo lugar y no pierdas tiempo buscando todo lo que necesitas para
+        realizar tu proyecto.
       </p>
-      <p className='mb-4'>
-        😨 ¿No te animas?, hace el pedido mediante este{' '}
+      <p className='mb-8'>
+        La web es Open Source, así que si queres participar, tenes diferentes
+        maneras:
+      </p>
+      <p className='mb-1'>
+        🚀 Hace un PR en el{' '}
+        <WebLink
+          className='underline'
+          eventName='Click on New Issue - Link recurso'
+          href='https://github.com/nsdonato/recursostech'
+          target='_blank'>
+          repositorio
+        </WebLink>
+      </p>
+      <p className='mb-1'>
+        😨 ¿No te animas a hacer el PR?. Podes hacer el pedido mediante un{' '}
         <WebLink
           className='underline'
           eventName='Click on New Issue - Link recurso'
@@ -30,35 +46,31 @@ export default async function Home() {
           target='_blank'>
           Issue
         </WebLink>
-        , opción <em>Agregar nuevo recurso</em> y lo agregamos!
+        , opción 👉🏻 <em>Agregar nuevo recurso</em>
       </p>
-      <p>
+      <p className='mb-1'>
         📹 ¿Te gustaría que alguna herramienta tenga video, para saber como
-        instalarla/configurarla?
-      </p>
-      <p className='mb-4'>
-        🚀 Hace el pedido mediante un{' '}
+        funciona, instalarla o configurarla? Hace el pedido mediante un Issue,
+        opción 👉🏻{' '}
         <WebLink
           className='underline'
           eventName='Click on New Issue - Link video'
           href='https://github.com/nsdonato/recursostech/issues/new/choose'
           target='_blank'>
-          Issue
+          Agregar nuevo video
         </WebLink>
-        , opción <em>Agregar nuevo video para recurso</em>e intentamos sumarlo!
       </p>
-      <p className='mb-4'>
-        Espero te guste la idea y si crees que se puede agregar algo más, no
-        dudes en comentarlo! ☺️
+      <p className='mb-10'>
+        🔜 Proximamente podrás hacer pedidos mediante un formulario
       </p>
       Noe.-
-      <div className='flex justify-evenly max-w-sm gap-2 mt-4 items-center mb-6 md:max-w-56'>
+      <div className='flex items-center gap-2 mt-4'>
         {noeSocialNetworks.map(({ type, url, cover }) => (
           <WebLink
             key={type}
             href={url}
             eventName={`Click on vamoacodear - ${type}`}>
-            <Figure cover={cover} placeholder={type} />
+            <Figure className='' cover={cover} placeholder={type} />
           </WebLink>
         ))}
       </div>

@@ -3,7 +3,7 @@ import { DocPage, LinkType } from '@/lib/db-types'
 export const learn: DocPage = {
   title: 'Aprender Backend',
   description: [
-    'Recursos GRATIS, en español, para aprender todo sobre los lenguajes necesarios para ser programador/a backend.',
+    'Recursos GRATIS, en español, para aprender todo sobre lo necesario para ser programador/a backend.',
   ],
   contributors: [
     {
