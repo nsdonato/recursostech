@@ -7,6 +7,9 @@ const animation: DocPage = {
     {
       github_username: 'mariaelisaaraya',
     },
+    {
+      github_username: 'jamerrq'
+    }
   ],
   pageItems: [
     {
@@ -217,6 +220,21 @@ const animation: DocPage = {
       },
       videos: [],
     },
+    {
+      imgPlaceholder: 'Tailwind CSS Animations',
+      titleCard: 'Animaciones con Tailwind CSS',
+      links: [
+        {
+          type: LinkType.Web,
+          url: 'https://tailwindcss-animations.vercel.app/',
+        },
+      ],
+      cover: {
+        src: '/frontend/animation/midulogo.png',
+        height: 44,
+        width: 154.53,
+      },
+    }
   ],
 }
 
