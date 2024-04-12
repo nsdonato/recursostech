@@ -3,7 +3,7 @@ import { DocPage, LinkType } from '@/lib/db-types'
 export const sreamers: DocPage = {
   title: 'Streamers',
   description: [
-    'Personas del mundo tech que hacen streaming en vivo sobre programación en backend.',
+    'Conoce los streamers hispanohablantes, con los que aprenderás sobre distintas temáticas del desarrollo backend',
   ],
   contributors: [{ github_username: 'nsdonato' }],
   pageItems: [

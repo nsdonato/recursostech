@@ -2,7 +2,7 @@ import { DocPage, LinkType } from '@/lib/db-types'
 
 const icons: DocPage = {
   title: 'Iconos',
-  description: ['Iconos para usar en tus proyectos.'],
+  description: ['Diversidad de iconos para usar en tus proyectos.'],
   contributors: [
     { github_username: 'nsdonato' },
     { github_username: 'IvanMJs' },
@@ -11,7 +11,8 @@ const icons: DocPage = {
   pageItems: [
     {
       imgPlaceholder: 'Phosphoricons',
-      titleCard: '',
+      titleCard:
+        'Familia de iconos flexible para interfaces, diagramas, presentaciones',
       links: [{ type: LinkType.Web, url: 'https://phosphoricons.com/' }],
       cover: {
         src: '/frontend/phosphoricons.svg',
@@ -22,7 +23,7 @@ const icons: DocPage = {
     },
     {
       imgPlaceholder: 'React Symbols',
-      titleCard: '',
+      titleCard: 'Iconos de archivos y carpetas',
       links: [{ type: LinkType.Web, url: 'https://react-symbols.vercel.app' }],
       cover: {
         src: '/frontend/reactsymbol.svg',
@@ -33,7 +34,7 @@ const icons: DocPage = {
     },
     {
       imgPlaceholder: 'Feather Icons',
-      titleCard: '',
+      titleCard: 'Iconos de código abierto sencillamente hermosos',
       links: [{ type: LinkType.Web, url: 'https://feathericons.com/' }],
       cover: {
         src: '/frontend/feather.svg',
@@ -44,7 +45,7 @@ const icons: DocPage = {
     },
     {
       imgPlaceholder: 'Hero Icons',
-      titleCard: '',
+      titleCard: 'Iconos SVG hechos a mano por los creadores de Tailwind CSS',
       links: [{ type: LinkType.Web, url: 'https://heroicons.com/' }],
       cover: {
         src: '/frontend/heroicon.svg',
@@ -55,7 +56,7 @@ const icons: DocPage = {
     },
     {
       imgPlaceholder: 'Tabler Icons',
-      titleCard: '',
+      titleCard: 'Más de 5200 iconos pixel-perfect para diseño web',
       links: [{ type: LinkType.Web, url: 'https://tabler.io/icons' }],
       cover: {
         src: '/frontend/tabler.svg',
@@ -66,7 +67,7 @@ const icons: DocPage = {
     },
     {
       imgPlaceholder: 'Sargami Icons',
-      titleCard: '',
+      titleCard: 'Iconos de código abierto dedicados a sus exquisitos diseños',
       links: [{ type: LinkType.Web, url: 'https://sargamicons.com/' }],
       cover: {
         src: '/frontend/sargamicons.svg',
@@ -77,7 +78,8 @@ const icons: DocPage = {
     },
     {
       imgPlaceholder: 'Iconoir',
-      titleCard: '',
+      titleCard:
+        'Disponible en SVG, Font, React, React Native, Flutter, Figma y Framer.',
       links: [{ type: LinkType.Web, url: 'https://iconoir.com/' }],
       cover: {
         src: '/frontend/iconoir.svg',
@@ -88,7 +90,7 @@ const icons: DocPage = {
     },
     {
       imgPlaceholder: 'Lucide',
-      titleCard: '',
+      titleCard: 'Iconos iconos coherentes',
       links: [{ type: LinkType.Web, url: 'https://lucide.dev/' }],
       cover: {
         src: '/frontend/lucide.svg',

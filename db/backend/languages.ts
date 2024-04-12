@@ -2,9 +2,7 @@ import { DocPage, LinkType } from '@/lib/db-types'
 
 export const languages: DocPage = {
   title: 'Lenguajes de programación',
-  description: [
-    'Los lenguajes más utilizados a la hora de crear aplicaciones backend.',
-  ],
+  description: ['Los más utilizados a la hora de crear aplicaciones backend.'],
   contributors: [
     { github_username: 'nsdonato' },
     { github_username: 'eduWTR' },

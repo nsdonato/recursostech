@@ -2,9 +2,7 @@ import { DocPage, LinkType } from '@/lib/db-types'
 
 const languages: DocPage = {
   title: 'Lenguajes',
-  description: [
-    'Si te preguntas que lenguajes tenes que aprender para poder ser Frontend, te dejo en orden, los más utilizados:',
-  ],
+  description: ['Los más utilizados a la hora de crear aplicaciones frontend'],
   contributors: [{ github_username: 'nsdonato' }],
   pageItems: [
     {
