@@ -228,6 +228,18 @@ const components_library: DocPage = {
       },
       videos: [],
     },
+    {
+      imgPlaceholder: 'SyntaxUI',
+      titleCard:
+        'Elementos de interfaz de usuario gratuitos diseñados para un desarrollo rápido.',
+      links: [{ type: LinkType.Web, url: 'https://syntaxui.com/' }],
+      cover: {
+        src: '/frontend/syntaxUI.svg',
+        height: 80,
+        width: 80,
+      },
+      videos: [],
+    },
   ],
 }
 
