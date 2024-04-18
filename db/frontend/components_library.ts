@@ -12,6 +12,7 @@ const components_library: DocPage = {
     { github_username: 'pheralb' },
     { github_username: 'guguponce' },
     { github_username: 'eduWTR' },
+    { github_username: 'Francocdev' },
   ],
   pageItems: [
     {
