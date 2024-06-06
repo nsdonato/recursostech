@@ -1053,21 +1053,6 @@ const vscode: DocPage = {
       ],
     },
     {
-      imgPlaceholder: 'GraphQL',
-      titleCard: '',
-      cover: {
-        src: '',
-        height: 50,
-        width: 50,
-      },
-      links: [
-        {
-          type: LinkType.Marketplace,
-          url: 'https://marketplace.visualstudio.com/items?itemName=mquandalle.graphql',
-        },
-      ],
-    },
-    {
       imgPlaceholder: 'Lit Plugin',
       titleCard: '',
       cover: {
