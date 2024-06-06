@@ -12,6 +12,7 @@ const components_library: DocPage = {
     { github_username: 'pheralb' },
     { github_username: 'guguponce' },
     { github_username: 'eduWTR' },
+    { github_username: 'Francocdev' },
   ],
   pageItems: [
     {
@@ -225,6 +226,18 @@ const components_library: DocPage = {
         src: '/frontend/tremor.svg',
         height: 80,
         width: 120,
+      },
+      videos: [],
+    },
+    {
+      imgPlaceholder: 'SyntaxUI',
+      titleCard:
+        'Elementos de interfaz de usuario gratuitos diseñados para un desarrollo rápido.',
+      links: [{ type: LinkType.Web, url: 'https://syntaxui.com/' }],
+      cover: {
+        src: '/frontend/syntaxUI.svg',
+        height: 80,
+        width: 80,
       },
       videos: [],
     },
