@@ -7,6 +7,7 @@ const icons: DocPage = {
     { github_username: 'nsdonato' },
     { github_username: 'IvanMJs' },
     { github_username: 'isahernz' },
+    { github_username: 'MatiScavuzzo' },
   ],
   pageItems: [
     {
@@ -160,6 +161,17 @@ const icons: DocPage = {
       links: [{ type: LinkType.Web, url: 'https://animatedicons.co/' }],
       cover: {
         src: '/frontend/animatedicons.svg',
+        height: 80,
+        width: 80,
+      },
+      videos: [],
+    },
+    {
+      imgPlaceholder: 'React Icons',
+      titleCard: 'Biblioteca de íconos para React con importaciones ES6',
+      links: [{ type: LinkType.Web, url: 'https://react-icons.github.io/react-icons/' }],
+      cover: {
+        src: '/frontend/react-icons.svg',
         height: 80,
         width: 80,
       },
