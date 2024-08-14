@@ -1,6 +1,6 @@
 import { DocPage, LinkType } from '@/lib/db-types'
 
-export const sreamers: DocPage = {
+export const streamers: DocPage = {
   title: 'Streamers',
   description: [
     'Conoce los streamers hispanohablantes, con los que aprenderás sobre distintas temáticas del desarrollo backend',
@@ -54,4 +54,4 @@ export const sreamers: DocPage = {
   ],
 }
 
-export default sreamers
+export default streamers
