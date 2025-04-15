@@ -1,5 +1,4 @@
-import Image from 'next/image'
-
+/* eslint-disable @next/next/no-img-element */
 import { PageContributor } from '@/lib/db-types'
 import { EventNames } from '@/lib/metrics/metrics-types'
 import { getContributorsFromGitHub } from '@/services/get-contributors'
@@ -38,7 +37,7 @@ export const Contributors = async ({
               <WebLink
                 href={contributor.profile}
                 eventName={`${EventNames.CLICK_ON_GH_CONTRIBUTOR} - ${contributor.name}`}>
-                <Image
+                <img
                   data-testid={`contributor-${contributor.name}`}
                   loading='lazy'
                   src={contributor.avatar}

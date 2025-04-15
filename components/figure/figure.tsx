@@ -1,5 +1,4 @@
-import Image from 'next/image'
-
+/* eslint-disable @next/next/no-img-element */
 import { Cover } from '@/lib/db-types'
 import { cn } from '@/lib/utils'
 
@@ -21,7 +20,7 @@ export const Figure = ({
   const hasCover = cover.src !== ''
   return (
     <figure>
-      <Image
+      <img
         id={id}
         className={cn(className, {
           svg: isSvg,
