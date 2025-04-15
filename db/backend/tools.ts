@@ -1,6 +1,6 @@
 import { DocPage, LinkType } from '@/lib/db-types'
 
-const tools: DocPage = {
+export const tools: DocPage = {
   title: 'Herramientas',
   description: [
     'Diferentes herramientas que te pueden ayudar en el día a día como BackEnd.',
